@@ -1,0 +1,3385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Website</title>
+    <style>
+/* Style for the question box */
+        .question-box {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        /* Style for correct answers */
+        .correct {
+            border: 2px solid green;
+            background-color: #d4edda;
+        }
+
+        /* Style for incorrect answers */
+        .incorrect {
+            border: 2px solid red;
+            background-color: #f8d7da;
+        }
+
+        /* Style for radio options */
+        .radio-group label {
+            font-size: 14px;
+            display: block;
+            margin: 5px 0;
+        }
+
+        /* Style for buttons */
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none; 
+            margin: 0;
+            padding: 0;
+            background-color: lightgray; 
+            overflow: hidden;
+            display: flex;
+        }
+
+        li {
+            flex: 1;
+        }
+
+        li a {
+            display: block;
+            padding: 14px 16px;
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid black;
+        }
+
+        li a:hover {
+            background-color: white;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .radio-group {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MCQ Website</h1>
+    <ul>
+        <li><a href="#" onclick="showContent('home')">HOME</a></li>
+        <li><a href="#" onclick="showContent('c')">C</a></li>
+        <li><a href="#" onclick="showContent('cpp')">C++</a></li>
+        <li><a href="#" onclick="showContent('html')">HTML</a></li>
+        <li><a href="#" onclick="showContent('css')">CSS</a></li>
+        <li><a href="#" onclick="showContent('java')">JAVA</a></li>
+        <li><a href="#" onclick="showContent('python')">PYTHON</a></li>
+        <li><a href="#" onclick="showContent('csharp')">C#</a></li>
+        <li><a href="#" onclick="showContent('javascript')">JAVASCRIPT</a></li>
+        <li><a href="#" onclick="showContent('sql')">SQL</a></li>
+        <li><a href="#" onclick="showContent('datastructure')">DATASTRUCTURE</a></li>
+    </ul>
+
+    <div class="content">
+        <section id="home" class="active">
+            <h2>Welcome to MCQ Website</h2>
+            <p>Start exploring different programming and markup languages!</p>
+        </section>
+<div class="content">
+        <!-- SQL Section -->
+        <section id="sql">
+            <h2>SQL</h2>
+            <p>Learn SQL and database management concepts.</p>
+            <h3>MCQ</h3>
+            <form id="sql-quiz">
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q1: What does SQL stand for?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> Structured Query Logic</label><br>
+        <label><input type="radio" name="q1" value="1"> Structured Query Language</label><br>
+        <label><input type="radio" name="q1" value="0"> Simple Query Language</label><br>
+        <label><input type="radio" name="q1" value="0"> Sequential Query Language</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q2: Which of the following is used to fetch data from a database?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> SELECT</label><br>
+        <label><input type="radio" name="q2" value="1"> INSERT</label><br>
+        <label><input type="radio" name="q2" value="0"> DELETE</label><br>
+        <label><input type="radio" name="q2" value="0"> UPDATE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q3: Which of the following is the correct syntax for creating a table?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> CREATE TABLE table_name</label><br>
+        <label><input type="radio" name="q3" value="1"> CREATE TABLE table_name (column1 datatype, column2 datatype, ...)</label><br>
+        <label><input type="radio" name="q3" value="0"> TABLE CREATE table_name</label><br>
+        <label><input type="radio" name="q3" value="0"> CREATE table_name (column1 datatype, column2 datatype, ...)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q4: Which SQL clause is used to filter records?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> WHERE</label><br>
+        <label><input type="radio" name="q4" value="1"> HAVING</label><br>
+        <label><input type="radio" name="q4" value="0"> ORDER BY</label><br>
+        <label><input type="radio" name="q4" value="0"> GROUP BY</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q5: Which SQL command is used to delete a table from a database?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> REMOVE</label><br>
+        <label><input type="radio" name="q5" value="1"> DROP</label><br>
+        <label><input type="radio" name="q5" value="0"> DELETE</label><br>
+        <label><input type="radio" name="q5" value="0"> TRUNCATE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q6: What is the correct syntax for adding a column to an existing table?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> ALTER TABLE table_name ADD column_name datatype</label><br>
+        <label><input type="radio" name="q6" value="1"> ALTER TABLE table_name MODIFY column_name datatype</label><br>
+        <label><input type="radio" name="q6" value="0"> ALTER TABLE table_name ADD column_name</label><br>
+        <label><input type="radio" name="q6" value="0"> ALTER TABLE table_name CHANGE column_name datatype</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q7: Which of the following is used to combine rows from two or more tables?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> JOIN</label><br>
+        <label><input type="radio" name="q7" value="1"> UNION</label><br>
+        <label><input type="radio" name="q7" value="0"> GROUP BY</label><br>
+        <label><input type="radio" name="q7" value="0"> SELECT</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q8: What does the SQL `DISTINCT` keyword do?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> Removes duplicate records</label><br>
+        <label><input type="radio" name="q8" value="1"> Sorts records</label><br>
+        <label><input type="radio" name="q8" value="0"> Counts the number of records</label><br>
+        <label><input type="radio" name="q8" value="0"> Groups records</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q9: Which of the following SQL statements is used to update data in a table?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> UPDATE</label><br>
+        <label><input type="radio" name="q9" value="1"> INSERT</label><br>
+        <label><input type="radio" name="q9" value="0"> MODIFY</label><br>
+        <label><input type="radio" name="q9" value="0"> CHANGE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q10: What is the purpose of the SQL `ORDER BY` clause?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> Sorts the result set</label><br>
+        <label><input type="radio" name="q10" value="1"> Filters the result set</label><br>
+        <label><input type="radio" name="q10" value="0"> Groups the result set</label><br>
+        <label><input type="radio" name="q10" value="0"> Joins two or more tables</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q11: What does the SQL `LIKE` operator do?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> Compares exact values</label><br>
+        <label><input type="radio" name="q11" value="1"> Searches for a specified pattern in a column</label><br>
+        <label><input type="radio" name="q11" value="0"> Matches records with NULL values</label><br>
+        <label><input type="radio" name="q11" value="0"> Sorts records in a table</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q12: What is the purpose of the SQL `HAVING` clause?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> Filters groups after a `GROUP BY`</label><br>
+        <label><input type="radio" name="q12" value="1"> Filters records before a `GROUP BY`</label><br>
+        <label><input type="radio" name="q12" value="0"> Sorts the result set</label><br>
+        <label><input type="radio" name="q12" value="0"> Limits the number of records</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q13: Which SQL clause is used to combine rows from two or more tables based on a related column?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> GROUP BY</label><br>
+        <label><input type="radio" name="q13" value="1"> JOIN</label><br>
+        <label><input type="radio" name="q13" value="0"> ORDER BY</label><br>
+        <label><input type="radio" name="q13" value="0"> UNION</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q14: What is the correct SQL syntax for selecting all columns from a table named "employees"?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> SELECT * FROM employees;</label><br>
+        <label><input type="radio" name="q14" value="1"> SELECT all FROM employees;</label><br>
+        <label><input type="radio" name="q14" value="0"> SELECT employees FROM *;</label><br>
+        <label><input type="radio" name="q14" value="0"> SELECT columns FROM employees;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q15: What is the default sorting order of the SQL `ORDER BY` clause?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> Descending</label><br>
+        <label><input type="radio" name="q15" value="1"> Ascending</label><br>
+        <label><input type="radio" name="q15" value="0"> Random</label><br>
+        <label><input type="radio" name="q15" value="0"> None</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q16: Which of the following SQL statements is used to delete a record from a table?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> DELETE</label><br>
+        <label><input type="radio" name="q16" value="1"> REMOVE</label><br>
+        <label><input type="radio" name="q16" value="0"> TRUNCATE</label><br>
+        <label><input type="radio" name="q16" value="0"> DROP</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q17: Which SQL function is used to find the highest value in a column?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q17" value="0"> MAX()</label><br>
+        <label><input type="radio" name="q17" value="1"> MIN()</label><br>
+        <label><input type="radio" name="q17" value="0"> SUM()</label><br>
+        <label><input type="radio" name="q17" value="0"> COUNT()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q18: Which SQL clause is used to group rows that have the same values?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q18" value="0"> GROUP BY</label><br>
+        <label><input type="radio" name="q18" value="1"> HAVING</label><br>
+        <label><input type="radio" name="q18" value="0"> ORDER BY</label><br>
+        <label><input type="radio" name="q18" value="0"> DISTINCT</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q19: Which SQL keyword is used to prevent duplicate values in a query result?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q19" value="0"> DISTINCT</label><br>
+        <label><input type="radio" name="q19" value="1"> UNIQUE</label><br>
+        <label><input type="radio" name="q19" value="0"> SELECT</label><br>
+        <label><input type="radio" name="q19" value="0"> JOIN</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q20: What is the result of the following query: `SELECT COUNT(*) FROM employees;`?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q20" value="0"> It returns the total number of rows in the employees table.</label><br>
+        <label><input type="radio" name="q20" value="1"> It returns the sum of all values in the employees table.</label><br>
+        <label><input type="radio" name="q20" value="0"> It returns the number of columns in the employees table.</label><br>
+        <label><input type="radio" name="q20" value="0"> It returns the average value of the employees table.</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q21: Which SQL clause is used to limit the number of rows returned by a query?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q21" value="0"> LIMIT</label><br>
+        <label><input type="radio" name="q21" value="1"> TOP</label><br>
+        <label><input type="radio" name="q21" value="0"> WHERE</label><br>
+        <label><input type="radio" name="q21" value="0"> HAVING</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q22: Which of the following SQL statements is used to modify a table's structure?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q22" value="0"> ALTER</label><br>
+        <label><input type="radio" name="q22" value="1"> MODIFY</label><br>
+        <label><input type="radio" name="q22" value="0"> CHANGE</label><br>
+        <label><input type="radio" name="q22" value="0"> UPDATE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q23: Which SQL keyword is used to delete all records from a table without deleting the table itself?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q23" value="0"> DROP</label><br>
+        <label><input type="radio" name="q23" value="1"> TRUNCATE</label><br>
+        <label><input type="radio" name="q23" value="0"> REMOVE</label><br>
+        <label><input type="radio" name="q23" value="0"> DELETE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q24: What is the correct SQL syntax for creating an index on a table?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q24" value="0"> CREATE INDEX index_name ON table_name (column_name);</label><br>
+        <label><input type="radio" name="q24" value="1"> CREATE INDEX table_name ON column_name;</label><br>
+        <label><input type="radio" name="q24" value="0"> INDEX CREATE table_name (column_name);</label><br>
+        <label><input type="radio" name="q24" value="0"> CREATE table_name INDEX ON column_name;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q25: Which SQL function is used to calculate the total sum of a numeric column?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q25" value="0"> AVG()</label><br>
+        <label><input type="radio" name="q25" value="1"> SUM()</label><br>
+        <label><input type="radio" name="q25" value="0"> COUNT()</label><br>
+        <label><input type="radio" name="q25" value="0"> MAX()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q26: Which of the following is used to remove duplicates from the result set?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q26" value="0"> DISTINCT</label><br>
+        <label><input type="radio" name="q26" value="1"> UNIQUE</label><br>
+        <label><input type="radio" name="q26" value="0"> REMOVE</label><br>
+        <label><input type="radio" name="q26" value="0"> FILTER</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q27: Which SQL statement is used to retrieve data from a database?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q27" value="0"> SELECT</label><br>
+        <label><input type="radio" name="q27" value="1"> FETCH</label><br>
+        <label><input type="radio" name="q27" value="0"> GET</label><br>
+        <label><input type="radio" name="q27" value="0"> RETRIEVE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q28: Which SQL clause is used to specify the condition for filtering records?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q28" value="0"> WHERE</label><br>
+        <label><input type="radio" name="q28" value="1"> HAVING</label><br>
+        <label><input type="radio" name="q28" value="0"> ON</label><br>
+        <label><input type="radio" name="q28" value="0"> BY</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q29: Which of the following is used to remove a table from a database?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q29" value="0"> DELETE</label><br>
+        <label><input type="radio" name="q29" value="1"> DROP</label><br>
+        <label><input type="radio" name="q29" value="0"> REMOVE</label><br>
+        <label><input type="radio" name="q29" value="0"> TRUNCATE</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q30: Which SQL clause is used to sort the result set in ascending or descending order?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q30" value="0"> ORDER BY</label><br>
+        <label><input type="radio" name="q30" value="1"> GROUP BY</label><br>
+        <label><input type="radio" name="q30" value="0"> HAVING</label><br>
+        <label><input type="radio" name="q30" value="0"> SELECT</label><br>
+    </div>
+</div>
+
+                <button type="button" onclick="calculateScore('sql-quiz', 'sql-score')">Submit</button>
+            </form>
+            <p id="sql-score"></p>
+        </section>
+
+        <!-- Data Structure Section -->
+        <section id="datastructure">
+            <h2>Data Structures</h2>
+	<p>Understand various data structures like arrays, linked lists, stacks, and queues.</p>
+	            <h3>MCQ</h3>
+		            <form id="datastructure-quiz">
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q1: Which data structure uses LIFO (Last In First Out) order?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> Queue</label><br>
+        <label><input type="radio" name="q1" value="1"> Stack</label><br>
+        <label><input type="radio" name="q1" value="0"> Array</label><br>
+        <label><input type="radio" name="q1" value="0"> Linked List</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q2: Which of the following is a linear data structure?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> Array</label><br>
+        <label><input type="radio" name="q2" value="1"> Graph</label><br>
+        <label><input type="radio" name="q2" value="0"> Queue</label><br>
+        <label><input type="radio" name="q2" value="1"> Tree</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q3: Which data structure is used for breadth-first traversal of a graph?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> Stack</label><br>
+        <label><input type="radio" name="q3" value="1"> Queue</label><br>
+        <label><input type="radio" name="q3" value="0"> Linked List</label><br>
+        <label><input type="radio" name="q3" value="0"> Array</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q4: Which of the following is NOT a type of linked list?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> Doubly Linked List</label><br>
+        <label><input type="radio" name="q4" value="1"> Triply Linked List</label><br>
+        <label><input type="radio" name="q4" value="0"> Singly Linked List</label><br>
+        <label><input type="radio" name="q4" value="0"> Circular Linked List</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q5: What is the time complexity of accessing an element in an array?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> O(1)</label><br>
+        <label><input type="radio" name="q5" value="1"> O(n)</label><br>
+        <label><input type="radio" name="q5" value="0"> O(log n)</label><br>
+        <label><input type="radio" name="q5" value="0"> O(n^2)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q6: Which data structure allows insertion and deletion from both ends?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> Queue</label><br>
+        <label><input type="radio" name="q6" value="1"> Deque</label><br>
+        <label><input type="radio" name="q6" value="0"> Stack</label><br>
+        <label><input type="radio" name="q6" value="0"> Array</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q7: In which of the following is the data stored in a hierarchical manner?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> Tree</label><br>
+        <label><input type="radio" name="q7" value="1"> Graph</label><br>
+        <label><input type="radio" name="q7" value="0"> Stack</label><br>
+        <label><input type="radio" name="q7" value="0"> Array</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q8: Which of the following operations is NOT supported by a stack?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> Push</label><br>
+        <label><input type="radio" name="q8" value="1"> Delete</label><br>
+        <label><input type="radio" name="q8" value="0"> Pop</label><br>
+        <label><input type="radio" name="q8" value="0"> Peek</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q9: What is the worst-case time complexity of QuickSort?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> O(n^2)</label><br>
+        <label><input type="radio" name="q9" value="1"> O(n log n)</label><br>
+        <label><input type="radio" name="q9" value="0"> O(n)</label><br>
+        <label><input type="radio" name="q9" value="0"> O(log n)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q10: Which of the following is used for implementing a priority queue?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> Linked List</label><br>
+        <label><input type="radio" name="q10" value="1"> Heap</label><br>
+        <label><input type="radio" name="q10" value="0"> Array</label><br>
+        <label><input type="radio" name="q10" value="0"> Stack</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q11: Which of the following is an example of a non-linear data structure?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> Tree</label><br>
+        <label><input type="radio" name="q11" value="1"> Array</label><br>
+        <label><input type="radio" name="q11" value="0"> Linked List</label><br>
+        <label><input type="radio" name="q11" value="0"> Queue</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q12: What is the time complexity of searching for an element in a binary search tree (BST)?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> O(log n)</label><br>
+        <label><input type="radio" name="q12" value="1"> O(n)</label><br>
+        <label><input type="radio" name="q12" value="0"> O(n log n)</label><br>
+        <label><input type="radio" name="q12" value="0"> O(1)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q13: Which data structure is used for implementing recursion?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> Queue</label><br>
+        <label><input type="radio" name="q13" value="1"> Stack</label><br>
+        <label><input type="radio" name="q13" value="0"> Array</label><br>
+        <label><input type="radio" name="q13" value="0"> Linked List</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q14: What is the worst-case time complexity of Merge Sort?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> O(n log n)</label><br>
+        <label><input type="radio" name="q14" value="1"> O(n log n)</label><br>
+        <label><input type="radio" name="q14" value="0"> O(n^2)</label><br>
+        <label><input type="radio" name="q14" value="0"> O(log n)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q15: Which data structure is used in the implementation of a hash table?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> Array</label><br>
+        <label><input type="radio" name="q15" value="1"> Linked List</label><br>
+        <label><input type="radio" name="q15" value="0"> Stack</label><br>
+        <label><input type="radio" name="q15" value="0"> Queue</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q16: Which of the following is a characteristic of a doubly linked list?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> Each node has only one pointer</label><br>
+        <label><input type="radio" name="q16" value="1"> Each node has two pointers</label><br>
+        <label><input type="radio" name="q16" value="0"> It has a fixed size</label><br>
+        <label><input type="radio" name="q16" value="0"> It does not allow traversal</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q17: What is the primary use of a stack in programming?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q17" value="0"> To reverse data</label><br>
+        <label><input type="radio" name="q17" value="1"> To sort data</label><br>
+        <label><input type="radio" name="q17" value="0"> To search for elements</label><br>
+        <label><input type="radio" name="q17" value="0"> To store large data</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q18: In which scenario is a priority queue used?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q18" value="0"> When you need FIFO order</label><br>
+        <label><input type="radio" name="q18" value="1"> When elements are processed based on priority</label><br>
+        <label><input type="radio" name="q18" value="0"> When you need to implement a stack</label><br>
+        <label><input type="radio" name="q18" value="0"> When elements are inserted in sorted order</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q19: Which data structure is used for implementing the recursive function calls?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q19" value="0"> Stack</label><br>
+        <label><input type="radio" name="q19" value="1"> Queue</label><br>
+        <label><input type="radio" name="q19" value="0"> Linked List</label><br>
+        <label><input type="radio" name="q19" value="0"> Array</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q20: Which of the following is NOT a valid operation in a binary search tree (BST)?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q20" value="0"> Insertion</label><br>
+        <label><input type="radio" name="q20" value="1"> Deletion</label><br>
+        <label><input type="radio" name="q20" value="0"> Searching</label><br>
+        <label><input type="radio" name="q20" value="0"> Traversal</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q21: Which algorithm is used for searching an element in a sorted array?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q21" value="0"> Binary Search</label><br>
+        <label><input type="radio" name="q21" value="1"> Linear Search</label><br>
+        <label><input type="radio" name="q21" value="0"> Depth-First Search</label><br>
+        <label><input type="radio" name="q21" value="0"> Breadth-First Search</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q22: Which of the following is the primary difference between a stack and a queue?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q22" value="0"> Stack follows FIFO, while Queue follows LIFO</label><br>
+        <label><input type="radio" name="q22" value="1"> Stack follows LIFO, while Queue follows FIFO</label><br>
+        <label><input type="radio" name="q22" value="0"> Stack is used for searching, while Queue is used for sorting</label><br>
+        <label><input type="radio" name="q22" value="0"> Stack can hold any type of data, while Queue can hold only integers</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q23: What is the time complexity of accessing an element in a linked list?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q23" value="0"> O(n)</label><br>
+        <label><input type="radio" name="q23" value="1"> O(1)</label><br>
+        <label><input type="radio" name="q23" value="0"> O(log n)</label><br>
+        <label><input type="radio" name="q23" value="0"> O(n^2)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q24: What is the time complexity of inserting an element at the end of a doubly linked list?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q24" value="0"> O(1)</label><br>
+        <label><input type="radio" name="q24" value="1"> O(n)</label><br>
+        <label><input type="radio" name="q24" value="0"> O(log n)</label><br>
+        <label><input type="radio" name="q24" value="0"> O(n^2)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q25: What is the time complexity of deleting an element from a linked list?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q25" value="0"> O(1)</label><br>
+        <label><input type="radio" name="q25" value="1"> O(n)</label><br>
+        <label><input type="radio" name="q25" value="0"> O(log n)</label><br>
+        <label><input type="radio" name="q25" value="0"> O(n^2)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q26: Which of the following operations is used to check if a stack is empty?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q26" value="0"> isFull()</label><br>
+        <label><input type="radio" name="q26" value="1"> isEmpty()</label><br>
+        <label><input type="radio" name="q26" value="0"> peek()</label><br>
+        <label><input type="radio" name="q26" value="0"> pop()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q27: What is the space complexity of an array of size n?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q27" value="0"> O(n)</label><br>
+        <label><input type="radio" name="q27" value="1"> O(1)</label><br>
+        <label><input type="radio" name="q27" value="0"> O(log n)</label><br>
+        <label><input type="radio" name="q27" value="0"> O(n^2)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q28: Which of the following is an example of a dynamic data structure?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q28" value="0"> Array</label><br>
+        <label><input type="radio" name="q28" value="1"> Linked List</label><br>
+        <label><input type="radio" name="q28" value="0"> Stack</label><br>
+        <label><input type="radio" name="q28" value="0"> Queue</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q29: What is the main disadvantage of using a linked list over an array?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q29" value="0"> Random access is not possible</label><br>
+        <label><input type="radio" name="q29" value="1"> More memory is required</label><br>
+        <label><input type="radio" name="q29" value="0"> Insertion and deletion are slower</label><br>
+        <label><input type="radio" name="q29" value="0"> It has a fixed size</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q30: Which of the following is the most efficient way to implement a queue?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q30" value="0"> Using an array</label><br>
+        <label><input type="radio" name="q30" value="1"> Using a linked list</label><br>
+        <label><input type="radio" name="q30" value="0"> Using a stack</label><br>
+        <label><input type="radio" name="q30" value="0"> Using a binary tree</label><br>
+    </div>
+</div>
+
+                <button type="button" onclick="calculateScore('datastructure-quiz', 'datastructure-score')">Submit</button>
+            </form>
+            <p id="datastructure-score"></p>
+        </section>
+
+        <!-- C Section -->
+        <section id="c">
+            <h2>C Programming</h2>
+            <p>Learn the basics of C programming, its syntax, and structure.</p>
+            <h3>MCQ</h3>
+            <form id="c-quiz">
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q1: Which of the following is the correct syntax to print a message in C?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q1" value="0"> printf("Hello World");</label><br>
+                        <label><input type="radio" name="q1" value="1"> printf("Hello World\n");</label><br>
+                        <label><input type="radio" name="q1" value="0"> print("Hello World");</label><br>
+                        <label><input type="radio" name="q1" value="0"> None of the above</label><br>
+
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+                    <p><b>Q2: What is the size of int in C?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q2" value="0"> 4 bytes</label><br>
+                        <label><input type="radio" name="q2" value="1"> 2 bytes</label><br>
+                        <label><input type="radio" name="q2" value="0"> 8 bytes</label><br>
+                        <label><input type="radio" name="q2" value="0"> 32 bytes</label><br>
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+                    <p><b>Q3: Which operator is used to allocate memory in C?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q3" value="1"> malloc</label><br>
+                        <label><input type="radio" name="q3" value="0"> new</label><br>
+                        <label><input type="radio" name="q3" value="0"> calloc</label><br>
+                        <label><input type="radio" name="q3" value="0"> delete</label><br>
+
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+                    <p><b>Q4: What is the output of printf("%d", 10/2)?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q4" value="1"> 5</label><br>
+                        <label><input type="radio" name="q4" value="0"> 2</label><br>
+                        <label><input type="radio" name="q4" value="0"> Error</label><br>
+                        <label><input type="radio" name="q4" value="0"> None of the above</label><br>
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+                    <p><b>Q5: Which of the following is the correct way to declare a variable in C?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q4" value="0"> int 1a</label><br>
+                        <label><input type="radio" name="q4" value="1"> int a</label><br>
+                        <label><input type="radio" name="q4" value="0"> a int</label><br>
+                        <label><input type="radio" name="q4" value="0"> int for</label><br>
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q6: Which of the following is the correct way to declare a variable in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> int 1a</label><br> 
+        <label><input type="radio" name="q1" value="1"> int a</label><br> 
+        <label><input type="radio" name="q1" value="0"> a int</label><br>
+        <label><input type="radio" name="q1" value="0"> int</label><br>
+
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q7: Which of the following is not a valid C data type?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> decimal</label><br>
+        <label><input type="radio" name="q3" value="1"> float</label><br>
+        <label><input type="radio" name="q3" value="0"> char</label><br>
+        <label><input type="radio" name="q3" value="0"> string</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q8: What is the default value of a local variable in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> Undefined</label><br>
+        <label><input type="radio" name="q4" value="1"> 0</label><br>
+        <label><input type="radio" name="q4" value="0"> NULL</label><br>
+        <label><input type="radio" name="q4" value="0"> None of the above</label><br>
+
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q9: Which function is used to allocate memory dynamically in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="1"> malloc()</label><br>
+        <label><input type="radio" name="q5" value="0"> free()</label><br>
+        <label><input type="radio" name="q5" value="0"> calloc()</label><br>
+        <label><input type="radio" name="q5" value="0"> new()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q10: What is the correct syntax for a for loop in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="1"> for (int i = 0; i < 10; i++)</label><br>
+        <label><input type="radio" name="q6" value="0"> for i = 0 to 10</label><br>
+        <label><input type="radio" name="q6" value="0"> for (i = 0, i < 10, i++)</label><br>
+        <label><input type="radio" name="q6" value="0"> for (i = 0, j < 10, i++)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q11: What is the correct way to comment a single line in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> # This is a comment</label><br>
+        <label><input type="radio" name="q7" value="1"> // This is a comment</label><br>
+        <label><input type="radio" name="q7" value="0"> !-- This is a comment -- </label><br>
+        <label><input type="radio" name="q7" value="0"> // This is a comment // </label><br>
+
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q12: What will the following code print?
+
+    <pre>
+    int a = 5;
+    int b = 10;
+    printf("%d", a + b);
+    </pre>
+</b>
+    </p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="1"> 15</label><br>
+        <label><input type="radio" name="q8" value="0"> 510</label><br>
+        <label><input type="radio" name="q8" value="0"> 5</label><br>
+        <label><input type="radio" name="q8" value="0"> 105</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q13: The `break` statement is used to:</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="1"> Exit from a loop or switch statement</label><br>
+        <label><input type="radio" name="q9" value="0"> Exit from a function</label><br>
+        <label><input type="radio" name="q9" value="0"> Skip a loop iteration</label><br>
+        <label><input type="radio" name="q9" value="0"> Entry control a loop iteration</label><br>
+
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q14: Which of the following is used to read input from the user in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> input()</label><br>
+        <label><input type="radio" name="q10" value="1"> scanf()</label><br>
+        <label><input type="radio" name="q10" value="0"> cin()</label><br>
+        <label><input type="radio" name="q10" value="0"> printf()</label><br>
+
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q14: Which of the following is a logical operator in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> &</label><br>
+        <label><input type="radio" name="q11" value="1"> &&</label><br>
+        <label><input type="radio" name="q11" value="0"> +</label><br>
+	<label><input type="radio" name="q11" value="0"> ||</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q15: Which function is used to close a file in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="1"> fclose()</label><br>
+        <label><input type="radio" name="q12" value="0"> close()</label><br>
+        <label><input type="radio" name="q12" value="0"> end()</label><br>
+        <label><input type="radio" name="q12" value="0"> closefile()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q16: Which of the following is the correct definition of a pointer in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="1"> int* pointer;</label><br>
+        <label><input type="radio" name="q13" value="0"> pointer int;</label><br>
+        <label><input type="radio" name="q13" value="0"> pointer* int;</label><br>
+        <label><input type="radio" name="q13" value="0"> &pointer int;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q17: What is the correct way to define a function in C?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="1"> void function() { }</label><br>
+        <label><input type="radio" name="q14" value="0"> function void() { }</label><br>
+        <label><input type="radio" name="q14" value="0"> void { function() }</label><br>
+        <label><input type="radio" name="q14" value="0"> void function() </label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q18: What is the output of the following code?
+
+    <pre>
+    int x = 10;
+    x++;
+    printf("%d", x);
+    </pre>
+</b>
+    </p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> 9</label><br>
+        <label><input type="radio" name="q15" value="1"> 11</label><br>
+        <label><input type="radio" name="q15" value="0"> 10</label><br>
+        <label><input type="radio" name="q15" value="0"> 13</label><br>
+
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q19: What is the output of the following code snippet?</strong><br>
+    <code>#include &lt;stdio.h&gt;<br>
+    int main() {<br>
+        printf("%d", sizeof('A'));<br>
+        return 0;<br>
+    }</code></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> 4</label><br>
+        <label><input type="radio" name="q1" value="1"> 1</label><br>
+        <label><input type="radio" name="q1" value="0"> 2</label><br>
+        <label><input type="radio" name="q1" value="0"> Undefined</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><strong>Q20: Which of the following functions is used to allocate memory in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> malloc()</label><br>
+        <label><input type="radio" name="q2" value="1"> memory()</label><br>
+        <label><input type="radio" name="q2" value="0"> allocate()</label><br>
+        <label><input type="radio" name="q2" value="0"> memalloc()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q21: What is the output of the following code snippet?</strong><br>
+    <code>#include &lt;stdio.h&gt;<br>
+    int main() {<br>
+        int a = 10;<br>
+        printf("%d", a++);<br>
+        return 0;<br>
+    }</code></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> 11</label><br>
+        <label><input type="radio" name="q3" value="1"> 10</label><br>
+        <label><input type="radio" name="q3" value="0"> Undefined</label><br>
+        <label><input type="radio" name="q3" value="0"> Error</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><strong>Q22: Which of the following is not a valid storage class in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> auto</label><br>
+        <label><input type="radio" name="q4" value="1"> register</label><br>
+        <label><input type="radio" name="q4" value="0"> static</label><br>
+        <label><input type="radio" name="q4" value="0"> extern</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q23: What is the purpose of the `break` statement in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> To skip the current iteration of a loop</label><br>
+        <label><input type="radio" name="q5" value="1"> To exit a loop or switch case</label><br>
+        <label><input type="radio" name="q5" value="0"> To terminate the program</label><br>
+        <label><input type="radio" name="q5" value="0"> To skip a function call</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><strong>Q24: What is the value of the expression `5 / 2` in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> 2</label><br>
+        <label><input type="radio" name="q6" value="1"> 2.5</label><br>
+        <label><input type="radio" name="q6" value="0"> Undefined</label><br>
+        <label><input type="radio" name="q6" value="0"> Error</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q25: Which of the following header files is required for file handling in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> stdlib.h</label><br>
+        <label><input type="radio" name="q7" value="1"> stdio.h</label><br>
+        <label><input type="radio" name="q7" value="0"> string.h</label><br>
+        <label><input type="radio" name="q7" value="0"> conio.h</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><strong>Q26: Which of the following operators is used to access a pointer's value in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> *</label><br>
+        <label><input type="radio" name="q8" value="1"> &</label><br>
+        <label><input type="radio" name="q8" value="0"> -></label><br>
+        <label><input type="radio" name="q8" value="0"> @</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q27: Which loop guarantees at least one iteration?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> for</label><br>
+        <label><input type="radio" name="q9" value="1"> do-while</label><br>
+        <label><input type="radio" name="q9" value="0"> while</label><br>
+        <label><input type="radio" name="q9" value="0"> none of the above</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><strong>Q28: What is the output of the following code?</strong><br>
+    <code>#include &lt;stdio.h&gt;<br>
+    int main() {<br>
+        printf("%c", 'A' + 1);<br>
+        return 0;<br>
+    }</code></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> B</label><br>
+        <label><input type="radio" name="q14" value="1"> A</label><br>
+        <label><input type="radio" name="q14" value="0"> 66</label><br>
+        <label><input type="radio" name="q14" value="0"> Error</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q29: Which of the following is the correct syntax to declare a pointer?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> int &ptr;</label><br>
+        <label><input type="radio" name="q11" value="1"> int *ptr;</label><br>
+        <label><input type="radio" name="q11" value="0"> int ptr*;</label><br>
+        <label><input type="radio" name="q11" value="0"> int ptr&;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><strong>Q30: Which keyword is used to return a value from a function in C?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> return</label><br>
+        <label><input type="radio" name="q12" value="1"> send</label><br>
+        <label><input type="radio" name="q12" value="0"> output</label><br>
+        <label><input type="radio" name="q12" value="0"> end</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q31: Which format specifier is used for printing a float value?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> %d</label><br>
+        <label><input type="radio" name="q13" value="1"> %f</label><br>
+        <label><input type="radio" name="q13" value="0"> %c</label><br>
+        <label><input type="radio" name="q13" value="0"> %s</label><br>
+    </div>
+</div>
+
+
+
+
+
+                <button type="button" onclick="calculateScore('c-quiz', 'c-score')">Submit</button>
+            </form>
+            <p id="c-score"></p>
+        </section>
+
+        <!-- C++ Section -->
+        <section id="cpp">
+            <h2>C++ Programming</h2>
+            <p>Explore object-oriented programming with C++.</p>
+            <h3>MCQ</h3>
+            <form id="cpp-quiz">
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q1: How many keywords are C++?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q1" value="0"> 34</label><br>
+                        <label><input type="radio" name="q1" value="1"> 32</label><br>
+                        <label><input type="radio" name="q1" value="0"> 30</label><br>
+                        <label><input type="radio" name="q1" value="0"> None of the above</label><br>
+                    </div>
+                </div>
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q2: What is the purpose of the new operator?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q2" value="0"> To create a new object</label><br>
+                        <label><input type="radio" name="q2" value="1"> To allocate memory dynamically</label><br>
+                        <label><input type="radio" name="q2" value="0"> To delete an object</label><br>
+			<label><input type="radio" name="q2" value="0"> To dellocate memory dynamically</label><br>
+                    </div>
+                </div>
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q3: How do you define a destructor in C++?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q3" value="1"> ~MyClass()</label><br>
+                        <label><input type="radio" name="q3" value="0"> MyClass~()</label><br>
+                        <label><input type="radio" name="q3" value="0"> MyClass()</label><br>
+                        <label><input type="radio" name="q3" value="0"> MyClass(int a)</label><br>
+
+                    </div>
+                </div>
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q4: What is a virtual function?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q4" value="1"> A function that can be overridden in a derived class</label><br>
+                        <label><input type="radio" name="q4" value="0"> A function that is always virtual</label><br>
+                        <label><input type="radio" name="q4" value="0"> A function that cannot be overridden</label><br>
+                        <label><input type="radio" name="q4" value="0"> None of the above</label><br>
+
+                    </div>
+                </div>
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q5: Which of the following is the correct way to declare a variable in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> int 1a;</label><br>
+        <label><input type="radio" name="q1" value="1"> int a;</label><br>
+        <label><input type="radio" name="q1" value="0"> a int;</label><br>
+        <label><input type="radio" name="q1" value="0"> int for;</label><br>
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q6: Which function is used to print a string in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="1"> cout<<"Hello World";</label><br>
+        <label><input type="radio" name="q2" value="0"> print("Hello World");</label><br>
+        <label><input type="radio" name="q2" value="0"> echo("Hello World");</label><br>
+        <label><input type="radio" name="q2" value="0"> echo("Hello World");</label><br>
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q7: Which of the following is the correct syntax for declaring a pointer in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="1"> int* ptr;</label><br>
+        <label><input type="radio" name="q3" value="0"> int ptr*;</label><br>
+        <label><input type="radio" name="q3" value="0"> ptr int*;</label><br>
+        <label><input type="radio" name="q3" value="0"> int &ptr;</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q8: Which of the following is a valid C++ loop structure?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="1"> for (int i = 0; i < 10; i++)</label><br>
+        <label><input type="radio" name="q4" value="0"> for i = 0 to 10</label><br>
+        <label><input type="radio" name="q4" value="0"> repeat i = 0, i < 10;</label><br>
+        <label><input type="radio" name="q4" value="0"> for(i in range 10);</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q9: Which function is used to allocate dynamic memory in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="1"> new</label><br>
+        <label><input type="radio" name="q5" value="0"> malloc()</label><br>
+        <label><input type="radio" name="q5" value="0"> alloc()</label><br>
+        <label><input type="radio" name="q5" value="0"> delete</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q10: Which keyword is used to define a constant in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="1"> const</label><br>
+        <label><input type="radio" name="q6" value="0"> define</label><br>
+        <label><input type="radio" name="q6" value="0"> constant</label><br>
+        <label><input type="radio" name="q6" value="0"> Static</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q11: What is the size of a `double` in C++ on most systems?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> 4 bytes</label><br>
+        <label><input type="radio" name="q7" value="1"> 8 bytes</label><br>
+        <label><input type="radio" name="q7" value="0"> 16 bytes</label><br>
+        <label><input type="radio" name="q7" value="0"> 32 bytes</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q12: Which of the following is used to include libraries in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="1"> #include &lt;iostream&gt;</label><br>
+        <label><input type="radio" name="q8" value="0"> #include <library></label><br>
+        <label><input type="radio" name="q8" value="0"> include <con.io></label><br>
+        <label><input type="radio" name="q8" value="0"> include <iostream></label><br>
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q13: What does the `<<` operator do in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="1"> Output stream (used with cout)</label><br>
+        <label><input type="radio" name="q9" value="0"> Bitwise left shift</label><br>
+        <label><input type="radio" name="q9" value="0"> Input stream (used with cin)</label><br>
+        <label><input type="radio" name="q9" value="0"> None of the above</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q14: Which of the following is the correct way to define a class in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="1"> class MyClass { }; </label><br>
+        <label><input type="radio" name="q10" value="0"> class { MyClass }; </label><br>
+        <label><input type="radio" name="q10" value="0"> class MyClass(); </label><br>
+        <label><input type="radio" name="q10" value="0"> class Static(); </label><br>
+    </div>
+</div>
+
+                               <div class="question-box" data-correct-answer="1">
+    <p><b>Q16: Which of the following is used to read input from the user in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> input()</label><br>
+        <label><input type="radio" name="q12" value="1"> cin>>;</label><br>
+        <label><input type="radio" name="q12" value="0"> scan()</label><br>
+        <label><input type="radio" name="q10" value="0"> cout<<; </label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q17: What does the `new` keyword do in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="1"> Allocates memory dynamically</label><br>
+        <label><input type="radio" name="q13" value="0"> Declares a constant</label><br>
+        <label><input type="radio" name="q13" value="0"> Defines a pointer</label><br>
+        <label><input type="radio" name="q13" value="1"> Dellocates memory dynamically</label><br>
+
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q18: Which of the following is a valid way to define a constructor in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="1"> MyClass() { }</label><br>
+        <label><input type="radio" name="q14" value="0"> constructor MyClass() { }</label><br>
+        <label><input type="radio" name="q14" value="0"> void MyClass() { }</label><br>
+        <label><input type="radio" name="q14" value="0"> ~MyClass() { }</label><br>
+    </div>
+</div>
+
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q19: What does the `delete` keyword do in C++?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="1"> Deallocates dynamically allocated memory</label><br>
+        <label><input type="radio" name="q15" value="0"> Deletes a file</label><br>
+        <label><input type="radio" name="q15" value="0"> Deletes a class</label><br>
+        <label><input type="radio" name="q15" value="0"> Deletes a function</label><br>
+
+    </div>
+</div>
+                <div class="question-box" data-correct-answer="1">
+    <p><b>Q20: Who is considered the father of C++ programming language?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> Dennis Ritchie</label><br>
+        <label><input type="radio" name="q1" value="1"> Bjarne Stroustrup</label><br>
+        <label><input type="radio" name="q1" value="0"> James Gosling</label><br>
+        <label><input type="radio" name="q1" value="0"> Anders Hejlsberg</label><br>
+           </div>
+</div>
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q21: How many types of contructors are there in c++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q1" value="0"> 3</label><br>
+            <label><input type="radio" name="q1" value="1"> 2</label><br>
+            <label><input type="radio" name="q1" value="0"> 1</label><br>
+            <label><input type="radio" name="q1" value="0"> 0</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q22: What is the file extension of C++ source files?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q2" value="0"> .c</label><br>
+            <label><input type="radio" name="q2" value="1"> .cpp</label><br>
+            <label><input type="radio" name="q2" value="0"> .java</label><br>
+            <label><input type="radio" name="q2" value="0"> .py</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q23: Which keyword is used to declare a class in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q3" value="1"> class</label><br>
+            <label><input type="radio" name="q3" value="0"> struct</label><br>
+            <label><input type="radio" name="q3" value="0"> define</label><br>
+            <label><input type="radio" name="q3" value="0"> object</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q24: Which of the following is the correct syntax for including a library in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q4" value="0"> #include "iostream"</label><br>
+            <label><input type="radio" name="q4" value="1"> #include <iostream>;</label><br>
+            <label><input type="radio" name="q4" value="0"> include <iostream></label><br>
+            <label><input type="radio" name="q4" value="0"> import <iostream>;</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q25: Which of the following is a valid way to declare a pointer in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q5" value="1"> int* ptr;</label><br>
+            <label><input type="radio" name="q5" value="0"> int ptr*;</label><br>
+            <label><input type="radio" name="q5" value="0"> ptr int;</label><br>
+            <label><input type="radio" name="q5" value="0"> *int ptr;</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q26: Which operator is used to access members of a class in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q6" value="1"> . (dot operator)</label><br>
+            <label><input type="radio" name="q6" value="0"> -> (arrow operator)</label><br>
+            <label><input type="radio" name="q6" value="0"> & (ampersand)</label><br>
+            <label><input type="radio" name="q6" value="0"> * (asterisk)</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q27: Which of the following is used to allocate memory dynamically in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q7" value="1"> new</label><br>
+            <label><input type="radio" name="q7" value="0"> malloc()</label><br>
+            <label><input type="radio" name="q7" value="0"> alloc()</label><br>
+            <label><input type="radio" name="q7" value="0"> calloc()</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q28: Which keyword is used to define a constant in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q8" value="1"> const</label><br>
+            <label><input type="radio" name="q8" value="0"> define</label><br>
+            <label><input type="radio" name="q8" value="0"> constant</label><br>
+            <label><input type="radio" name="q8" value="0"> static</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q29: What is the default return type of the main() function in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q9" value="1"> int</label><br>
+            <label><input type="radio" name="q9" value="0"> void</label><br>
+            <label><input type="radio" name="q9" value="0"> float</label><br>
+            <label><input type="radio" name="q9" value="0"> char</label><br>
+        </div>
+    </div>
+
+                <div class="question-box" data-correct-answer="1">
+        <p><b>Q30: What does the `<<` operator do in C++?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q10" value="1"> Output stream (used with cout)</label><br>
+            <label><input type="radio" name="q10" value="0"> Bitwise left shift</label><br>
+            <label><input type="radio" name="q10" value="0"> Input stream (used with cin)</label><br>
+            <label><input type="radio" name="q10" value="0"> Assignment</label><br>
+        </div>
+    </div>
+
+                <button type="button" onclick="calculateScore('cpp-quiz', 'cpp-score')">Submit</button>
+            </form>
+            <p id="cpp-score"></p>
+        </section>
+
+        <!-- HTML Section -->
+        <section id="html">
+            <h2>HTML</h2>
+            <p>Learn how to create structured web pages using HTML.</p>
+            <h3>MCQ</h3>
+            <form id="html-quiz">
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q1: How heading are in html?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q1" value="0"> 6</label><br>
+                        <label><input type="radio" name="q1" value="0"> 5</label><br>
+                        <label><input type="radio" name="q1" value="1"> 4</label><br>
+                        <label><input type="radio" name="q1" value="0"> None of the above</label><br>
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q2: Which HTML attribute is used to define inline styles?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q2" value="0"> class</label><br>
+            <label><input type="radio" name="q2" value="1"> style</label><br>
+            <label><input type="radio" name="q2" value="0"> id</label><br>
+            <label><input type="radio" name="q2" value="0"> inline</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q3: Which HTML element is used to create a hyperlink?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q3" value="0"> link</label><br>
+            <label><input type="radio" name="q3" value="1"> a</label><br>
+            <label><input type="radio" name="q3" value="0"> href</label><br>
+            <label><input type="radio" name="q3" value="0"> url</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q4: Which attribute is used to provide a unique identifier to an HTML element?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q4" value="0"> class</label><br>
+            <label><input type="radio" name="q4" value="1"> id</label><br>
+            <label><input type="radio" name="q4" value="0"> name</label><br>
+            <label><input type="radio" name="q4" value="0"> key</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q5: Which HTML tag is used to define an unordered list?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q5" value="0"> ol</label><br>
+            <label><input type="radio" name="q5" value="1"> ul</label><br>
+            <label><input type="radio" name="q5" value="0"> li</label><br>
+            <label><input type="radio" name="q5" value="0"> list</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q6: Which tag is used to display an image in HTML?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q6" value="1"> img</label><br>
+            <label><input type="radio" name="q6" value="0"> image</label><br>
+            <label><input type="radio" name="q6" value="0"> src</label><br>
+            <label><input type="radio" name="q6" value="0"> picture</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q7: What is the correct HTML element for inserting a line break?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q7" value="1"> br</label><br>
+            <label><input type="radio" name="q7" value="0"> lb</label><br>
+            <label><input type="radio" name="q7" value="0"> break</label><br>
+            <label><input type="radio" name="q7" value="0"> hr</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q8: Which HTML element is used to define important text?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q8" value="0"> strong</label><br>
+            <label><input type="radio" name="q8" value="1"> em</label><br>
+            <label><input type="radio" name="q8" value="0"> mark</label><br>
+            <label><input type="radio" name="q8" value="0"> important</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q9: Which attribute specifies an alternate text for an image?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q9" value="0"> src</label><br>
+            <label><input type="radio" name="q9" value="1"> alt</label><br>
+            <label><input type="radio" name="q9" value="0"> title</label><br>
+            <label><input type="radio" name="q9" value="0"> description</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q10: Which HTML element is used for creating a dropdown list?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q10" value="0"> input</label><br>
+            <label><input type="radio" name="q10" value="1"> select</label><br>
+            <label><input type="radio" name="q10" value="0"> dropdown</label><br>
+            <label><input type="radio" name="q10" value="0"> list</label><br>
+        </div>
+    </div>
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q11: Which HTML element is used to define a table row?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="1"> tr</label><br>
+        <label><input type="radio" name="q11" value="0"> td</label><br>
+        <label><input type="radio" name="q11" value="0"> th</label><br>
+        <label><input type="radio" name="q11" value="0"> row</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q12: Which tag is used to create a numbered list in HTML?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> ul</label><br>
+        <label><input type="radio" name="q12" value="1"> ol</label><br>
+        <label><input type="radio" name="q12" value="0"> li</label><br>
+        <label><input type="radio" name="q12" value="0"> list</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q13: What does the &lt;iframe&gt; tag in HTML do?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="1"> Embeds another HTML page within the current page</label><br>
+        <label><input type="radio" name="q13" value="0"> Creates a frame around text</label><br>
+        <label><input type="radio" name="q13" value="0"> Displays an image</label><br>
+        <label><input type="radio" name="q13" value="0"> Defines an input field</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q14: Which HTML tag is used to define a form for user input?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="1"> form</label><br>
+        <label><input type="radio" name="q14" value="0"> input</label><br>
+        <label><input type="radio" name="q14" value="0"> button</label><br>
+        <label><input type="radio" name="q14" value="0"> textarea</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q15: What is the correct HTML element for inserting a horizontal line?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="1"> hr</label><br>
+        <label><input type="radio" name="q15" value="0"> line</label><br>
+        <label><input type="radio" name="q15" value="0"> br</label><br>
+        <label><input type="radio" name="q15" value="0"> hl</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q16: Which attribute is used to open a link in a new tab or window?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> href</label><br>
+        <label><input type="radio" name="q1" value="0"> rel</label><br>
+        <label><input type="radio" name="q1" value="1"> target</label><br>
+        <label><input type="radio" name="q1" value="0"> alt</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q17: Which HTML tag is used to define a table?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q11" value="0"> tab</label><br>
+            <label><input type="radio" name="q11" value="1"> table</label><br>
+            <label><input type="radio" name="q11" value="0"> tbl</label><br>
+            <label><input type="radio" name="q11" value="0"> t</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q18: Which tag is used to define a cell in an HTML table?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q12" value="0"> tr</label><br>
+            <label><input type="radio" name="q12" value="1"> td</label><br>
+            <label><input type="radio" name="q12" value="0"> th</label><br>
+            <label><input type="radio" name="q12" value="0"> cell</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q19: What is the correct syntax to create a checkbox in HTML?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q13" value="0"> input type="text"</label><br>
+            <label><input type="radio" name="q13" value="1"> input type="checkbox"</label><br>
+            <label><input type="radio" name="q13" value="0"> checkbox</label><br>
+            <label><input type="radio" name="q13" value="0"> input type="radio"</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q20: Which HTML element is used to specify a footer for a document?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q14" value="1"> footer</label><br>
+            <label><input type="radio" name="q14" value="0"> foot</label><br>
+            <label><input type="radio" name="q14" value="0"> end</label><br>
+            <label><input type="radio" name="q14" value="0"> bottom</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q21: Which tag is used to create a numbered list in HTML?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q15" value="0"> ul</label><br>
+            <label><input type="radio" name="q15" value="1"> ol</label><br>
+            <label><input type="radio" name="q15" value="0"> list</label><br>
+            <label><input type="radio" name="q15" value="0"> li</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q22: Which attribute is used to open a hyperlink in a new tab?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q16" value="0"> id</label><br>
+            <label><input type="radio" name="q16" value="0"> class</label><br>
+            <label><input type="radio" name="q16" value="1"> target</label><br>
+            <label><input type="radio" name="q16" value="0"> href</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q23: Which attribute is used to specify the URL of an image?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q17" value="0"> alt</label><br>
+            <label><input type="radio" name="q17" value="1"> src</label><br>
+            <label><input type="radio" name="q17" value="0"> href</label><br>
+            <label><input type="radio" name="q17" value="0"> title</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q24: Which tag is used to define a paragraph in HTML?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q18" value="1"> p</label><br>
+            <label><input type="radio" name="q18" value="0"> para</label><br>
+            <label><input type="radio" name="q18" value="0"> pg</label><br>
+            <label><input type="radio" name="q18" value="0"> text</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q25: Which HTML element is used to display preformatted text?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q19" value="1"> pre</label><br>
+            <label><input type="radio" name="q19" value="0"> code</label><br>
+            <label><input type="radio" name="q19" value="0"> text</label><br>
+            <label><input type="radio" name="q19" value="0"> format</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q26: Which HTML element is used to embed a video?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q20" value="1"> video</label><br>
+            <label><input type="radio" name="q20" value="0"> media</label><br>
+            <label><input type="radio" name="q20" value="0"> embed</label><br>
+            <label><input type="radio" name="q20" value="0"> movie</label><br>
+        </div>
+    </div>
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q27: Which attribute is used to specify the width of an input field in HTML?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> size</label><br>
+        <label><input type="radio" name="q1" value="0"> width</label><br>
+        <label><input type="radio" name="q1" value="1"> width</label><br>
+        <label><input type="radio" name="q1" value="0"> length</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q28: Which of the following is used to create a hidden input field in HTML forms?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> <code>&lt;input type="hidden"&gt;</code></label><br>
+        <label><input type="radio" name="q2" value="0"> <code>&lt;input type="password"&gt;</code></label><br>
+        <label><input type="radio" name="q2" value="0"> <code>&lt;input type="secret"&gt;</code></label><br>
+        <label><input type="radio" name="q2" value="1"> <code>&lt;input type="hidden"&gt;</code></label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q29: Which HTML element is used to create a dropdown list?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> <code>&lt;select&gt;</code></label><br>
+        <label><input type="radio" name="q3" value="0"> <code>&lt;option&gt;</code></label><br>
+        <label><input type="radio" name="q3" value="1"> <code>&lt;input type="dropdown"&gt;</code></label><br>
+        <label><input type="radio" name="q3" value="0"> <code>&lt;dropdown&gt;</code></label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q30: What is the correct way to embed an external CSS file in HTML?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> <code>&lt;style src="styles.css"&gt;</code></label><br>
+        <label><input type="radio" name="q4" value="1"> <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></label><br>
+        <label><input type="radio" name="q4" value="0"> <code>&lt;css&gt;styles.css&lt;/css&gt;</code></label><br>
+        <label><input type="radio" name="q4" value="0"> <code>&lt;script src="styles.css"&gt;</code></label><br>
+    </div>
+</div>
+                <button type="button" onclick="calculateScore('html-quiz', 'html-score')">Submit</button>
+            </form>
+            <p id="html-score"></p>
+        </section>
+
+        <!-- CSS Section -->
+        <section id="css">
+            <h2>CSS Markup Language</h2>
+            <p>Explore Markup Language programming with CSS.</p>
+            <h3>MCQ</h3>
+            <form id="css-quiz">
+                <div class="question-box" data-correct-answer="1">
+    <p><strong>Q1: Which property is used to change the text color in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> font-color</label><br>
+        <label><input type="radio" name="q1" value="1"> color</label><br>
+        <label><input type="radio" name="q1" value="0"> text-color</label><br>
+        <label><input type="radio" name="q1" value="0"> foreground</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q2: How do you add a background color in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> background-color</label><br>
+        <label><input type="radio" name="q2" value="1"> bg-color</label><br>
+        <label><input type="radio" name="q2" value="0"> bgcolor</label><br>
+        <label><input type="radio" name="q2" value="0"> background</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q3: Which property is used to change the font size?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> text-size</label><br>
+        <label><input type="radio" name="q3" value="1"> font-size</label><br>
+        <label><input type="radio" name="q3" value="0"> size</label><br>
+        <label><input type="radio" name="q3" value="0"> font</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q4: What is the default value of the `position` property?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> static</label><br>
+        <label><input type="radio" name="q4" value="1"> relative</label><br>
+        <label><input type="radio" name="q4" value="0"> absolute</label><br>
+        <label><input type="radio" name="q4" value="0"> fixed</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q5: How can you make a text bold in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> font-weight: 500;</label><br>
+        <label><input type="radio" name="q5" value="1"> font-weight: bold;</label><br>
+        <label><input type="radio" name="q5" value="0"> text-style: bold;</label><br>
+        <label><input type="radio" name="q5" value="0"> font: bold;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q6: Which CSS property is used to control the spacing between lines of text?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> line-height</label><br>
+        <label><input type="radio" name="q6" value="1"> text-spacing</label><br>
+        <label><input type="radio" name="q6" value="0"> line-spacing</label><br>
+        <label><input type="radio" name="q6" value="0"> spacing</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q7: What does `z-index` property do in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> Controls the opacity of an element</label><br>
+        <label><input type="radio" name="q7" value="1"> Controls the stack order of elements</label><br>
+        <label><input type="radio" name="q7" value="0"> Controls the visibility of an element</label><br>
+        <label><input type="radio" name="q7" value="0"> Controls the alignment of elements</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q8: Which property is used to create space between the border and the content of an element?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> padding</label><br>
+        <label><input type="radio" name="q8" value="1"> margin</label><br>
+        <label><input type="radio" name="q8" value="0"> border-spacing</label><br>
+        <label><input type="radio" name="q8" value="0"> spacing</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q9: Which CSS property is used to set the shadow for a text?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> box-shadow</label><br>
+        <label><input type="radio" name="q9" value="1"> text-shadow</label><br>
+        <label><input type="radio" name="q9" value="0"> shadow</label><br>
+        <label><input type="radio" name="q9" value="0"> text-outline</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q10: Which value of the `display` property makes an element a block-level element?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> block</label><br>
+        <label><input type="radio" name="q10" value="1"> inline</label><br>
+        <label><input type="radio" name="q10" value="0"> flex</label><br>
+        <label><input type="radio" name="q10" value="0"> inline-block</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q11: Which CSS property is used to specify the transparency of an element?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> visibility</label><br>
+        <label><input type="radio" name="q11" value="1"> opacity</label><br>
+        <label><input type="radio" name="q11" value="0"> transparent</label><br>
+        <label><input type="radio" name="q11" value="0"> display</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q12: How do you apply a CSS style to an element with a specific ID?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> Use # followed by the ID</label><br>
+        <label><input type="radio" name="q12" value="1"> Use . followed by the ID</label><br>
+        <label><input type="radio" name="q12" value="0"> Use : followed by the ID</label><br>
+        <label><input type="radio" name="q12" value="0"> Use @ followed by the ID</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q13: What is the correct syntax to set a background image in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> background-image: image(url);</label><br>
+        <label><input type="radio" name="q13" value="1"> background-image: url("image.jpg");</label><br>
+        <label><input type="radio" name="q13" value="0"> background: image("image.jpg");</label><br>
+        <label><input type="radio" name="q13" value="0"> image: url("image.jpg");</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q14: Which property is used to change the font of an element?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> font-family</label><br>
+        <label><input type="radio" name="q14" value="1"> font-style</label><br>
+        <label><input type="radio" name="q14" value="0"> font-weight</label><br>
+        <label><input type="radio" name="q14" value="0"> font-size</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q15: What is the correct way to apply multiple background images in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> Separate each URL with a comma</label><br>
+        <label><input type="radio" name="q15" value="1"> Use background: url1, url2;</label><br>
+        <label><input type="radio" name="q15" value="0"> Use background-images: url1 url2;</label><br>
+        <label><input type="radio" name="q15" value="0"> Not possible in CSS</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q16: How can you add a border to an element in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> border: 1px solid black;</label><br>
+        <label><input type="radio" name="q16" value="1"> border: solid 1px black;</label><br>
+        <label><input type="radio" name="q16" value="0"> border-width: 1px;</label><br>
+        <label><input type="radio" name="q16" value="0"> border-color: black;</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q17: Which property is used to set the width of the border?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q31" value="0"> border-thickness</label><br>
+        <label><input type="radio" name="q31" value="1"> border-width</label><br>
+        <label><input type="radio" name="q31" value="0"> border-size</label><br>
+        <label><input type="radio" name="q31" value="0"> border-style</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q18: What does the `clip-path` property do?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q32" value="0"> Clips an element to a specified shape</label><br>
+        <label><input type="radio" name="q32" value="1"> Defines the visibility of an element</label><br>
+        <label><input type="radio" name="q32" value="0"> Sets the alignment of text</label><br>
+        <label><input type="radio" name="q32" value="0"> Changes the stacking order</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q19: How do you make an element take the full width of its parent container?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q33" value="0"> width: auto;</label><br>
+        <label><input type="radio" name="q33" value="1"> width: 100%;</label><br>
+        <label><input type="radio" name="q33" value="0"> max-width: 100%;</label><br>
+        <label><input type="radio" name="q33" value="0"> display: block;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q20: Which CSS property is used to change the cursor when hovering over an element?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q34" value="0"> cursor</label><br>
+        <label><input type="radio" name="q34" value="1"> pointer</label><br>
+        <label><input type="radio" name="q34" value="0"> hover</label><br>
+        <label><input type="radio" name="q34" value="0"> display</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q21: Which property is used to define the space between the cell content and its border in a table?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q35" value="0"> border-spacing</label><br>
+        <label><input type="radio" name="q35" value="1"> padding</label><br>
+        <label><input type="radio" name="q35" value="0"> margin</label><br>
+        <label><input type="radio" name="q35" value="0"> spacing</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q22: Which CSS property is used to specify the duration of a transition effect?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q36" value="0"> animation-duration</label><br>
+        <label><input type="radio" name="q36" value="1"> transition-duration</label><br>
+        <label><input type="radio" name="q36" value="0"> duration</label><br>
+        <label><input type="radio" name="q36" value="0"> transition-time</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q23: What is the purpose of the `@media` rule in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q37" value="0"> To apply styles based on screen size or device type</label><br>
+        <label><input type="radio" name="q37" value="1"> To add animations to elements</label><br>
+        <label><input type="radio" name="q37" value="0"> To create reusable classes</label><br>
+        <label><input type="radio" name="q37" value="0"> To define a responsive grid</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q24: How do you create a circular shape using CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q38" value="0"> border-radius: 50px;</label><br>
+        <label><input type="radio" name="q38" value="1"> border-radius: 50%;</label><br>
+        <label><input type="radio" name="q38" value="0"> border: circle;</label><br>
+        <label><input type="radio" name="q38" value="0"> border-radius: round;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q25: Which property is used to make an element stick to the top of the viewport when scrolling?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q39" value="0"> position: sticky;</label><br>
+        <label><input type="radio" name="q39" value="1"> position: fixed;</label><br>
+        <label><input type="radio" name="q39" value="0"> position: absolute;</label><br>
+        <label><input type="radio" name="q39" value="0"> position: static;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q26: Which CSS property controls the order of flex items in a flex container?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q40" value="0"> flex-order</label><br>
+        <label><input type="radio" name="q40" value="1"> order</label><br>
+        <label><input type="radio" name="q40" value="0"> flex-align</label><br>
+        <label><input type="radio" name="q40" value="0"> item-order</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q27: What is the purpose of the `clip-path` property in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q41" value="0"> To define a clipping region for an element</label><br>
+        <label><input type="radio" name="q41" value="1"> To create a shadow around an element</label><br>
+        <label><input type="radio" name="q41" value="0"> To add a border to an element</label><br>
+        <label><input type="radio" name="q41" value="0"> To set the visibility of an element</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q28: Which value of the `overflow` property hides content that overflows an element's box?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q42" value="0"> visible</label><br>
+        <label><input type="radio" name="q42" value="1"> hidden</label><br>
+        <label><input type="radio" name="q42" value="0"> scroll</label><br>
+        <label><input type="radio" name="q42" value="0"> auto</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q29: How can you align items horizontally in a flex container?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q43" value="0"> justify-content</label><br>
+        <label><input type="radio" name="q43" value="1"> align-items</label><br>
+        <label><input type="radio" name="q43" value="0"> align-content</label><br>
+        <label><input type="radio" name="q43" value="0"> flex-align</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q30: What does the `transform` property do in CSS?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q44" value="0"> Changes the opacity of an element</label><br>
+        <label><input type="radio" name="q44" value="1"> Applies 2D or 3D transformations to an element</label><br>
+        <label><input type="radio" name="q44" value="0"> Resizes an element's box</label><br>
+        <label><input type="radio" name="q44" value="0"> Changes the display property of an element</label><br>
+    </div>
+</div>
+
+
+
+                <button type="button" onclick="calculateScore('css-quiz', 'css-score')">Submit</button>
+            </form>
+            <p id="css-score"></p>
+        </section>
+
+        <!-- Java Section -->
+        <section id="java">
+            <h2>JAVA</h2>
+            <p>Learn how to create structured web pages using Java.</p>
+            <h3>MCQ</h3>
+            <form id="java-quiz">
+                <div class="question-box" data-correct-answer="1">
+                    <p><b>Q1: What is the default value of a `boolean` variable in Java?</b></p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q1" value="1"> false</label><br>
+                        <label><input type="radio" name="q1" value="0"> true</label><br>
+                        <label><input type="radio" name="q1" value="0"> null</label><br>
+                        <label><input type="radio" name="q1" value="0"> 0</label><br>
+                    </div>
+                </div>
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q2: Which of these is not a Java keyword?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q2" value="0"> static</label><br>
+            <label><input type="radio" name="q2" value="1"> include</label><br>
+            <label><input type="radio" name="q2" value="0"> volatile</label><br>
+            <label><input type="radio" name="q2" value="0"> synchronized</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q3: Which method is used to find the length of a string in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q3" value="0"> size()</label><br>
+            <label><input type="radio" name="q3" value="0"> length</label><br>
+            <label><input type="radio" name="q3" value="1"> length()</label><br>
+            <label><input type="radio" name="q3" value="0"> getLength()</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q4: What is the size of an `int` in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q4" value="0"> 16 bits</label><br>
+            <label><input type="radio" name="q4" value="1"> 32 bits</label><br>
+            <label><input type="radio" name="q4" value="0"> 64 bits</label><br>
+            <label><input type="radio" name="q4" value="0"> 8 bits</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q5: Which of these access specifiers makes a member accessible only within its own class?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q5" value="0"> protected</label><br>
+            <label><input type="radio" name="q5" value="1"> private</label><br>
+            <label><input type="radio" name="q5" value="0"> public</label><br>
+            <label><input type="radio" name="q5" value="0"> default</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q6: Which of these is a valid way to start the `main` method in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q6" value="0"> public static void main[]</label><br>
+            <label><input type="radio" name="q6" value="1"> public static void main(String[] args)</label><br>
+            <label><input type="radio" name="q6" value="0"> public void main(String args)</label><br>
+            <label><input type="radio" name="q6" value="0"> static public void main(String args)</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q7: What is the superclass of all classes in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q7" value="1"> Object</label><br>
+            <label><input type="radio" name="q7" value="0"> Class</label><br>
+            <label><input type="radio" name="q7" value="0"> Base</label><br>
+            <label><input type="radio" name="q7" value="0"> Super</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q8: Which keyword is used to inherit a class in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q8" value="0"> implement</label><br>
+            <label><input type="radio" name="q8" value="1"> extends</label><br>
+            <label><input type="radio" name="q8" value="0"> inherits</label><br>
+            <label><input type="radio" name="q8" value="0"> super</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q9: Which operator is used to concatenate two strings in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q9" value="0"> *</label><br>
+            <label><input type="radio" name="q9" value="1"> +</label><br>
+            <label><input type="radio" name="q9" value="0"> &</label><br>
+            <label><input type="radio" name="q9" value="0"> .</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+        <p><b>Q10: Which of these is not a primitive data type in Java?</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="q10" value="0"> int</label><br>
+            <label><input type="radio" name="q10" value="0"> char</label><br>
+            <label><input type="radio" name="q10" value="0"> boolean</label><br>
+            <label><input type="radio" name="q10" value="1"> String</label><br>
+        </div>
+    </div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q11: Which keyword is used to declare a constant in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> final</label><br>
+        <label><input type="radio" name="q11" value="0"> const</label><br>
+        <label><input type="radio" name="q11" value="1"> static final</label><br>
+        <label><input type="radio" name="q11" value="0"> immutable</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q12: What is the output of `System.out.println(10 + "20");`?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> 30</label><br>
+        <label><input type="radio" name="q12" value="1"> 1020</label><br>
+        <label><input type="radio" name="q12" value="0"> Error</label><br>
+        <label><input type="radio" name="q12" value="0"> None of the above</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q13: Which of these loops is guaranteed to execute at least once?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="1"> do-while</label><br>
+        <label><input type="radio" name="q13" value="0"> while</label><br>
+        <label><input type="radio" name="q13" value="0"> for</label><br>
+        <label><input type="radio" name="q13" value="0"> None of the above</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q14: What does the `hashCode()` method do in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="1"> Returns a hash code value for the object</label><br>
+        <label><input type="radio" name="q14" value="0"> Compares two objects</label><br>
+        <label><input type="radio" name="q14" value="0"> Converts an object to a string</label><br>
+        <label><input type="radio" name="q14" value="0"> Initializes an object</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q15: Which package is imported by default in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="1"> java.lang</label><br>
+        <label><input type="radio" name="q15" value="0"> java.util</label><br>
+        <label><input type="radio" name="q15" value="0"> java.io</label><br>
+        <label><input type="radio" name="q15" value="0"> java.net</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q16: Which method is used to stop a thread in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> stop()</label><br>
+        <label><input type="radio" name="q16" value="0"> pause()</label><br>
+        <label><input type="radio" name="q16" value="1"> interrupt()</label><br>
+        <label><input type="radio" name="q16" value="0"> end()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q17: What is the return type of the `main()` method in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q17" value="0"> int</label><br>
+        <label><input type="radio" name="q17" value="1"> void</label><br>
+        <label><input type="radio" name="q17" value="0"> String</label><br>
+        <label><input type="radio" name="q17" value="0"> None</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q18: What does the `try` block do in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q18" value="0"> Declares variables</label><br>
+        <label><input type="radio" name="q18" value="1"> Catches exceptions</label><br>
+        <label><input type="radio" name="q18" value="0"> Executes a loop</label><br>
+        <label><input type="radio" name="q18" value="0"> Starts a thread</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q19: Which interface is implemented by the `Thread` class?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q19" value="0"> Runnable</label><br>
+        <label><input type="radio" name="q19" value="1"> Runnable and Serializable</label><br>
+        <label><input type="radio" name="q19" value="0"> Callable</label><br>
+        <label><input type="radio" name="q19" value="0"> None</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q20: What is the purpose of the `super` keyword in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q20" value="0"> To create an object</label><br>
+        <label><input type="radio" name="q20" value="1"> To refer to the immediate parent class</label><br>
+        <label><input type="radio" name="q20" value="0"> To call the child class</label><br>
+        <label><input type="radio" name="q20" value="0"> To terminate a loop</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q22: What is the purpose of the `super` keyword in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> To create an object</label><br>
+        <label><input type="radio" name="q1" value="1"> To refer to the immediate parent class</label><br>
+        <label><input type="radio" name="q1" value="0"> To call the child class</label><br>
+        <label><input type="radio" name="q1" value="0"> To terminate a loop</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><b>Q23: Which of the following is not a valid data type in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> int</label><br>
+        <label><input type="radio" name="q2" value="1"> float</label><br>
+        <label><input type="radio" name="q2" value="2"> string</label><br>
+        <label><input type="radio" name="q2" value="3"> boolean</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q24: What will be the output of the following code?</b></p>
+    <pre>
+        public class Test {
+            public static void main(String[] args) {
+                System.out.println(5 + 3 + "Java");
+            }
+        }
+    </pre>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> 8Java</label><br>
+        <label><input type="radio" name="q3" value="0"> Java8</label><br>
+        <label><input type="radio" name="q3" value="1"> 8 Java</label><br>
+        <label><input type="radio" name="q3" value="0"> Error</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q25: What is the purpose of the `super` keyword in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> To create an object</label><br>
+        <label><input type="radio" name="q1" value="1"> To refer to the immediate parent class</label><br>
+        <label><input type="radio" name="q1" value="0"> To call the child class</label><br>
+        <label><input type="radio" name="q1" value="0"> To terminate a loop</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="2">
+    <p><b>Q26: Which of the following is not a valid data type in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> int</label><br>
+        <label><input type="radio" name="q2" value="1"> float</label><br>
+        <label><input type="radio" name="q2" value="2"> string</label><br>
+        <label><input type="radio" name="q2" value="3"> boolean</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><b>Q27: What is the output of the following code?</b></p>
+    <pre>
+        public class Test {
+            public static void main(String[] args) {
+                System.out.println(5 + 3 + "Java");
+            }
+        }
+    </pre>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> 8Java</label><br>
+        <label><input type="radio" name="q3" value="1"> Java8</label><br>
+        <label><input type="radio" name="q3" value="2"> 8 Java</label><br>
+        <label><input type="radio" name="q3" value="3"> Error</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q28: Which method is used to start a thread in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> start()</label><br>
+        <label><input type="radio" name="q4" value="1"> run()</label><br>
+        <label><input type="radio" name="q4" value="2"> begin()</label><br>
+        <label><input type="radio" name="q4" value="3"> execute()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><b>Q29: What will be the output of the following code?</b></p>
+    <pre>
+        public class Test {
+            public static void main(String[] args) {
+                String str = "Hello";
+                str = str + " World";
+                System.out.println(str);
+            }
+        }
+    </pre>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> Hello World</label><br>
+        <label><input type="radio" name="q5" value="1"> Error</label><br>
+        <label><input type="radio" name="q5" value="2"> Hello</label><br>
+        <label><input type="radio" name="q5" value="3"> World</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><b>Q30: What is the default value of a boolean variable in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> true</label><br>
+        <label><input type="radio" name="q6" value="1"> false</label><br>
+        <label><input type="radio" name="q6" value="2"> null</label><br>
+        <label><input type="radio" name="q6" value="3"> 0</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="2">
+    <p><b>Q31: Which of the following is the correct syntax for a constructor in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> constructor MyClass() { }</label><br>
+        <label><input type="radio" name="q7" value="1"> void MyClass() { }</label><br>
+        <label><input type="radio" name="q7" value="2"> public MyClass() { }</label><br>
+        <label><input type="radio" name="q7" value="3"> public void MyClass() { }</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><b>Q32: What is the output of the following code?</b></p>
+    <pre>
+        public class Test {
+            public static void main(String[] args) {
+                int[] arr = {1, 2, 3};
+                System.out.println(arr[1]);
+            }
+        }
+    </pre>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> 2</label><br>
+        <label><input type="radio" name="q8" value="1"> 1</label><br>
+        <label><input type="radio" name="q8" value="2"> Error</label><br>
+        <label><input type="radio" name="q8" value="3"> 3</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="3">
+    <p><b>Q33: Which exception is thrown when dividing by zero in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> ArithmeticException</label><br>
+        <label><input type="radio" name="q9" value="1"> NullPointerException</label><br>
+        <label><input type="radio" name="q9" value="2"> IndexOutOfBoundsException</label><br>
+        <label><input type="radio" name="q9" value="3"> Exception</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="0">
+    <p><b>Q34: Which keyword is used to prevent a method from being overridden in Java?</b></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> final</label><br>
+        <label><input type="radio" name="q10" value="1"> static</label><br>
+        <label><input type="radio" name="q10" value="2"> abstract</label><br>
+        <label><input type="radio" name="q10" value="3"> private</label><br>
+    </div>
+</div>
+
+
+
+                <button type="button" onclick="calculateScore('java-quiz', 'java-score')">Submit</button>
+            </form>
+            <p id="java-score"></p>
+        </section>
+
+        <!-- Python Section -->
+        <section id="python">
+            <h2>PYTHON</h2>
+            <p>Learn how to create structured web pages using Python.</p>
+            <h3>MCQ</h3>
+            <form id="python-quiz">
+                <div class="question-box" data-correct-answer="1">
+    <p><strong>Q1: Which of the following is used to define a function in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> function</label><br>
+        <label><input type="radio" name="q1" value="1"> def</label><br>
+        <label><input type="radio" name="q1" value="0"> func</label><br>
+        <label><input type="radio" name="q1" value="0"> define</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q2: What is the output of the following code? <br> print(2 + 3 * 4)</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> 14</label><br>
+        <label><input type="radio" name="q2" value="1"> 20</label><br>
+        <label><input type="radio" name="q2" value="0"> 24</label><br>
+        <label><input type="radio" name="q2" value="0"> 17</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q3: Which of the following is a mutable data type in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> tuple</label><br>
+        <label><input type="radio" name="q3" value="1"> list</label><br>
+        <label><input type="radio" name="q3" value="0"> string</label><br>
+        <label><input type="radio" name="q3" value="0"> set</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q4: How do you create a dictionary in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> dict = {}</label><br>
+        <label><input type="radio" name="q4" value="1"> dict = []</label><br>
+        <label><input type="radio" name="q4" value="0"> dict = ()</label><br>
+        <label><input type="radio" name="q4" value="0"> dict = set()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q5: Which of the following is the correct syntax for a while loop in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> while i = 0</label><br>
+        <label><input type="radio" name="q5" value="1"> while i == 0</label><br>
+        <label><input type="radio" name="q5" value="0"> while i != 0</label><br>
+        <label><input type="radio" name="q5" value="0"> while (i == 0)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q6: Which function is used to get the length of a list in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> len()</label><br>
+        <label><input type="radio" name="q6" value="1"> size()</label><br>
+        <label><input type="radio" name="q6" value="0"> length()</label><br>
+        <label><input type="radio" name="q6" value="0"> count()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q7: How do you start a comment in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> // comment</label><br>
+        <label><input type="radio" name="q7" value="1"> # comment</label><br>
+        <label><input type="radio" name="q7" value="0"> /* comment */</label><br>
+        <label><input type="radio" name="q7" value="0"> -- comment</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q8: What does the `break` statement do in a loop in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> Exits the loop</label><br>
+        <label><input type="radio" name="q8" value="1"> Skips the current iteration</label><br>
+        <label><input type="radio" name="q8" value="0"> Pauses the loop</label><br>
+        <label><input type="radio" name="q8" value="0"> Restarts the loop</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q9: Which of the following is the correct way to define a class in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> class MyClass[]:</label><br>
+        <label><input type="radio" name="q9" value="1"> class MyClass:</label><br>
+        <label><input type="radio" name="q9" value="0"> class MyClass(){}:</label><br>
+        <label><input type="radio" name="q9" value="0"> class MyClass[] {}</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q10: What does the `continue` statement do in a loop in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> Skips the current iteration</label><br>
+        <label><input type="radio" name="q10" value="1"> Exits the loop</label><br>
+        <label><input type="radio" name="q10" value="0"> Pauses the loop</label><br>
+        <label><input type="radio" name="q10" value="0"> Restarts the loop</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q11: Which of the following is used to import a module in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> import module_name</label><br>
+        <label><input type="radio" name="q11" value="1"> import module</label><br>
+        <label><input type="radio" name="q11" value="0"> include module_name</label><br>
+        <label><input type="radio" name="q11" value="0"> include module</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q12: Which of the following is not a valid variable name in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> _variable</label><br>
+        <label><input type="radio" name="q12" value="1"> 1variable</label><br>
+        <label><input type="radio" name="q12" value="0"> variable1</label><br>
+        <label><input type="radio" name="q12" value="0"> variable_name</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q13: What is the output of the following code? <br> print(10 // 3)</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> 3.33</label><br>
+        <label><input type="radio" name="q13" value="1"> 3</label><br>
+        <label><input type="radio" name="q13" value="0"> 3.0</label><br>
+        <label><input type="radio" name="q13" value="0"> 4</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q14: What is the correct way to define a lambda function in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> lambda x: x + 1</label><br>
+        <label><input type="radio" name="q14" value="1"> def lambda x: x + 1</label><br>
+        <label><input type="radio" name="q14" value="0"> lambda (x): x + 1</label><br>
+        <label><input type="radio" name="q14" value="0"> function x: x + 1</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q15: What does the `is` keyword do in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> Compares the values of two variables</label><br>
+        <label><input type="radio" name="q15" value="1"> Compares the memory locations of two variables</label><br>
+        <label><input type="radio" name="q15" value="0"> Checks if a variable is null</label><br>
+        <label><input type="radio" name="q15" value="0"> Compares the types of two variables</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q16: What will be the output of the following code? <br> print(type(5.0))</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> <class 'float'></label><br>
+        <label><input type="radio" name="q16" value="1"> <class 'int'></label><br>
+        <label><input type="radio" name="q16" value="0"> <class 'str'></label><br>
+        <label><input type="radio" name="q16" value="0"> <class 'bool'></label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q17: Which of the following is used to handle exceptions in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q17" value="0"> catch</label><br>
+        <label><input type="radio" name="q17" value="1"> try</label><br>
+        <label><input type="radio" name="q17" value="0"> error</label><br>
+        <label><input type="radio" name="q17" value="0"> exception</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q18: Which method is used to remove an element from a list in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q18" value="0"> remove()</label><br>
+        <label><input type="radio" name="q18" value="1"> pop()</label><br>
+        <label><input type="radio" name="q18" value="0"> delete()</label><br>
+        <label><input type="radio" name="q18" value="0"> discard()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q19: Which of the following methods is used to add an element to a list in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q19" value="0"> insert()</label><br>
+        <label><input type="radio" name="q19" value="1"> append()</label><br>
+        <label><input type="radio" name="q19" value="0"> add()</label><br>
+        <label><input type="radio" name="q19" value="0"> extend()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q20: What will be the output of the following code? <br> print("Hello".upper())</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q20" value="0"> HELLO</label><br>
+        <label><input type="radio" name="q20" value="1"> hello</label><br>
+        <label><input type="radio" name="q20" value="0"> Hello</label><br>
+        <label><input type="radio" name="q20" value="0"> error</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q21: What is the correct way to create a tuple in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q21" value="0"> tuple = []</label><br>
+        <label><input type="radio" name="q21" value="1"> tuple = ()</label><br>
+        <label><input type="radio" name="q21" value="0"> tuple = {} </label><br>
+        <label><input type="radio" name="q21" value="0"> tuple = set()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q22: Which of the following methods can be used to check if a key exists in a dictionary?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q22" value="0"> in</label><br>
+        <label><input type="radio" name="q22" value="1"> exists()</label><br>
+        <label><input type="radio" name="q22" value="0"> has_key()</label><br>
+        <label><input type="radio" name="q22" value="0"> key()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q23: What will be the output of the following code? <br> print(10 % 3)</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q23" value="0"> 1</label><br>
+        <label><input type="radio" name="q23" value="1"> 3</label><br>
+        <label><input type="radio" name="q23" value="0"> 0</label><br>
+        <label><input type="radio" name="q23" value="0"> 10</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q24: Which of the following is the correct syntax to open a file in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q24" value="0"> open("file.txt")</label><br>
+        <label><input type="radio" name="q24" value="1"> open("file.txt", "r")</label><br>
+        <label><input type="radio" name="q24" value="0"> open("file.txt", "w")</label><br>
+        <label><input type="radio" name="q24" value="0"> open("file.txt", "r+")</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q25: Which method is used to close a file in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q25" value="0"> close()</label><br>
+        <label><input type="radio" name="q25" value="1"> quit()</label><br>
+        <label><input type="radio" name="q25" value="0"> end()</label><br>
+        <label><input type="radio" name="q25" value="0"> stop()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q26: How can you check if a list is empty in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q26" value="0"> if not list</label><br>
+        <label><input type="radio" name="q26" value="1"> if list == []</label><br>
+        <label><input type="radio" name="q26" value="0"> if len(list) == 0</label><br>
+        <label><input type="radio" name="q26" value="0"> if list == None</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q27: Which of the following is used to handle exceptions in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q27" value="0"> catch</label><br>
+        <label><input type="radio" name="q27" value="1"> try</label><br>
+        <label><input type="radio" name="q27" value="0"> error</label><br>
+        <label><input type="radio" name="q27" value="0"> exception</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q28: Which of the following is used to create a dictionary in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q28" value="0"> []</label><br>
+        <label><input type="radio" name="q28" value="1"> {}</label><br>
+        <label><input type="radio" name="q28" value="0"> ()</label><br>
+        <label><input type="radio" name="q28" value="0"> set()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q29: Which function is used to get the length of a string in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q29" value="0"> len()</label><br>
+        <label><input type="radio" name="q29" value="1"> size()</label><br>
+        <label><input type="radio" name="q29" value="0"> length()</label><br>
+        <label><input type="radio" name="q29" value="0"> count()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q30: What is the correct syntax for defining a class in Python?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q30" value="0"> class MyClass {}</label><br>
+        <label><input type="radio" name="q30" value="1"> class MyClass:</label><br>
+        <label><input type="radio" name="q30" value="0"> class MyClass[]</label><br>
+        <label><input type="radio" name="q30" value="0"> class MyClass()</label><br>
+    </div>
+</div>
+
+                <button type="button" onclick="calculateScore('python-quiz', 'python-score')">Submit</button>
+            </form>
+            <p id="python-score"></p>
+        </section>
+
+        <!-- C# Section -->
+        <section id="csharp">
+            <h2>C# Programming</h2>
+            <p>Learn about the fundamentals of C# programming.</p>
+            <h3>MCQ</h3>
+            <form id="csharp-quiz">
+                <div class="question-box" data-correct-answer="1">
+    <p><strong>Q1: Which of the following is used to define a class in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> function</label><br>
+        <label><input type="radio" name="q1" value="1"> class</label><br>
+        <label><input type="radio" name="q1" value="0"> object</label><br>
+        <label><input type="radio" name="q1" value="0"> struct</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q2: What is the default access modifier for class members in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> private</label><br>
+        <label><input type="radio" name="q2" value="1"> public</label><br>
+        <label><input type="radio" name="q2" value="0"> protected</label><br>
+        <label><input type="radio" name="q2" value="0"> internal</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q3: Which keyword is used to create a new instance of a class in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> instantiate</label><br>
+        <label><input type="radio" name="q3" value="1"> new</label><br>
+        <label><input type="radio" name="q3" value="0"> create</label><br>
+        <label><input type="radio" name="q3" value="0"> class</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q4: Which of the following data types is used to store a true or false value in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> bool</label><br>
+        <label><input type="radio" name="q4" value="1"> int</label><br>
+        <label><input type="radio" name="q4" value="0"> string</label><br>
+        <label><input type="radio" name="q4" value="0"> double</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q5: What is the base class for all classes in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> Object</label><br>
+        <label><input type="radio" name="q5" value="1"> System.Object</label><br>
+        <label><input type="radio" name="q5" value="0"> Class</label><br>
+        <label><input type="radio" name="q5" value="0"> Base</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q6: What is the purpose of the `using` statement in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> To import namespaces</label><br>
+        <label><input type="radio" name="q6" value="1"> To define a method</label><br>
+        <label><input type="radio" name="q6" value="0"> To handle exceptions</label><br>
+        <label><input type="radio" name="q6" value="0"> To declare variables</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q7: Which of the following is a valid method signature in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> void Method()</label><br>
+        <label><input type="radio" name="q7" value="1"> void Method(int a)</label><br>
+        <label><input type="radio" name="q7" value="0"> void Method(int a, b)</label><br>
+        <label><input type="radio" name="q7" value="0"> Method() void</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q8: What does the `static` keyword indicate in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> The member belongs to the class itself</label><br>
+        <label><input type="radio" name="q8" value="1"> The member is private</label><br>
+        <label><input type="radio" name="q8" value="0"> The member is read-only</label><br>
+        <label><input type="radio" name="q8" value="0"> The member is inherited</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q9: Which of the following is the correct syntax for a for loop in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> for(int i = 0; i < 10; i++)</label><br>
+        <label><input type="radio" name="q9" value="1"> for(int i = 0; i < 10; i++) { }</label><br>
+        <label><input type="radio" name="q9" value="0"> for(int i = 0; i < 10; i++)</label><br>
+        <label><input type="radio" name="q9" value="0"> for(int i = 0; i <= 10; i++) { }</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q10: Which of the following keywords is used to handle exceptions in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> try</label><br>
+        <label><input type="radio" name="q10" value="1"> throw</label><br>
+        <label><input type="radio" name="q10" value="0"> catch</label><br>
+        <label><input type="radio" name="q10" value="0"> finally</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q11: Which of the following is used to inherit a class in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> : (colon)</label><br>
+        <label><input type="radio" name="q11" value="1"> extends</label><br>
+        <label><input type="radio" name="q11" value="0"> implements</label><br>
+        <label><input type="radio" name="q11" value="0"> inherit</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q12: Which of the following is a value type in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> string</label><br>
+        <label><input type="radio" name="q12" value="1"> int</label><br>
+        <label><input type="radio" name="q12" value="0"> object</label><br>
+        <label><input type="radio" name="q12" value="0"> class</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q13: What is the purpose of the `sealed` keyword in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> Prevent inheritance</label><br>
+        <label><input type="radio" name="q13" value="1"> Prevent method overriding</label><br>
+        <label><input type="radio" name="q13" value="0"> Mark a class as abstract</label><br>
+        <label><input type="radio" name="q13" value="0"> Mark a class as static</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q14: What does the `interface` keyword define in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> A class with abstract methods</label><br>
+        <label><input type="radio" name="q14" value="1"> A contract for classes to implement</label><br>
+        <label><input type="radio" name="q14" value="0"> A static class</label><br>
+        <label><input type="radio" name="q14" value="0"> A base class</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q15: Which of the following types can be assigned to a variable of type `object` in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> Any type</label><br>
+        <label><input type="radio" name="q15" value="1"> Only reference types</label><br>
+        <label><input type="radio" name="q15" value="0"> Only value types</label><br>
+        <label><input type="radio" name="q15" value="0"> Only primitive types</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q16: Which method is used to start a thread in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> StartThread()</label><br>
+        <label><input type="radio" name="q16" value="1"> Start()</label><br>
+        <label><input type="radio" name="q16" value="0"> Run()</label><br>
+        <label><input type="radio" name="q16" value="0"> Execute()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q17: What is the purpose of the `readonly` keyword in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q17" value="0"> Prevent modification after initialization</label><br>
+        <label><input type="radio" name="q17" value="1"> Allow modification only within the constructor</label><br>
+        <label><input type="radio" name="q17" value="0"> Mark a variable as private</label><br>
+        <label><input type="radio" name="q17" value="0"> Prevent inheritance</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q18: Which of the following is the correct way to declare a nullable type in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q18" value="0"> int? number</label><br>
+        <label><input type="radio" name="q18" value="1"> Nullable<int> number</label><br>
+        <label><input type="radio" name="q18" value="0"> int nullable</label><br>
+        <label><input type="radio" name="q18" value="0"> number? int</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q19: Which of the following collections is not part of the C# collection framework?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q19" value="0"> List</label><br>
+        <label><input type="radio" name="q19" value="1"> HashSet</label><br>
+        <label><input type="radio" name="q19" value="0"> Queue</label><br>
+        <label><input type="radio" name="q19" value="0"> LinkedList</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q20: Which operator is used to access members of a class or struct in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q20" value="0"> . (dot)</label><br>
+        <label><input type="radio" name="q20" value="1"> -> (arrow)</label><br>
+        <label><input type="radio" name="q20" value="0"> : (colon)</label><br>
+        <label><input type="radio" name="q20" value="0"> # (hash)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q21: Which of the following is used to declare a constant in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q21" value="0"> const</label><br>
+        <label><input type="radio" name="q21" value="1"> final</label><br>
+        <label><input type="radio" name="q21" value="0"> static</label><br>
+        <label><input type="radio" name="q21" value="0"> readonly</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q22: Which of the following is a reference type in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q22" value="0"> int</label><br>
+        <label><input type="radio" name="q22" value="1"> string</label><br>
+        <label><input type="radio" name="q22" value="0"> double</label><br>
+        <label><input type="radio" name="q22" value="0"> bool</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q23: Which method is used to convert a string to an integer in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q23" value="0"> Convert.ToInt32()</label><br>
+        <label><input type="radio" name="q23" value="1"> Int32.Parse()</label><br>
+        <label><input type="radio" name="q23" value="0"> string.ToInteger()</label><br>
+        <label><input type="radio" name="q23" value="0"> Convert.ToInteger()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q24: Which of the following keywords is used to define an abstract class in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q24" value="0"> abstract</label><br>
+        <label><input type="radio" name="q24" value="1"> abstract class</label><br>
+        <label><input type="radio" name="q24" value="0"> class abstract</label><br>
+        <label><input type="radio" name="q24" value="0"> virtual</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q25: What does the `base` keyword refer to in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q25" value="0"> The base class of the current class</label><br>
+        <label><input type="radio" name="q25" value="1"> The current instance of the class</label><br>
+        <label><input type="radio" name="q25" value="0"> A static class</label><br>
+        <label><input type="radio" name="q25" value="0"> The constructor of the class</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q26: Which of the following is used to implement an interface in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q26" value="0"> implements</label><br>
+        <label><input type="radio" name="q26" value="1"> : (colon)</label><br>
+        <label><input type="radio" name="q26" value="0"> extends</label><br>
+        <label><input type="radio" name="q26" value="0"> with</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q27: What is the default value of a boolean variable in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q27" value="0"> false</label><br>
+        <label><input type="radio" name="q27" value="1"> true</label><br>
+        <label><input type="radio" name="q27" value="0"> null</label><br>
+        <label><input type="radio" name="q27" value="0"> 0</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q28: Which of the following is used to define a constructor in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q28" value="0"> public constructor</label><br>
+        <label><input type="radio" name="q28" value="1"> public ClassName()</label><br>
+        <label><input type="radio" name="q28" value="0"> void ClassName()</label><br>
+        <label><input type="radio" name="q28" value="0"> private ClassName()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q29: Which of the following statements is true about C# events?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q29" value="0"> Events are used to provide notifications to other classes</label><br>
+        <label><input type="radio" name="q29" value="1"> Events can be raised by delegates</label><br>
+        <label><input type="radio" name="q29" value="0"> Events are static in nature</label><br>
+        <label><input type="radio" name="q29" value="0"> Events can be accessed directly by other classes</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q30: Which of the following is used to handle multiple exceptions in C#?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q30" value="0"> multiple catch</label><br>
+        <label><input type="radio" name="q30" value="1"> catch block</label><br>
+        <label><input type="radio" name="q30" value="0"> try-finally</label><br>
+        <label><input type="radio" name="q30" value="0"> finally block</label><br>
+    </div>
+</div>
+
+
+                <button type="button" onclick="calculateScore('csharp-quiz', 'csharp-score')">Submit</button>
+            </form>
+            <p id="csharp-score"></p>
+        </section>
+
+        <!-- JavaScript Section -->
+        <section id="javascript">
+            <h2>JavaScript Programming</h2>
+            <p>Learn the essentials of JavaScript for web development.</p>
+            <h3>MCQ</h3>
+            <form id="javascript-quiz">
+                <div class="question-box" data-correct-answer="1">
+    <p><strong>Q1: Which company developed JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q1" value="0"> Netscape</label><br>
+        <label><input type="radio" name="q1" value="1"> Microsoft</label><br>
+        <label><input type="radio" name="q1" value="0"> Sun Microsystems</label><br>
+        <label><input type="radio" name="q1" value="0"> Oracle</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q2: How do you declare a variable in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q2" value="0"> varName = value;</label><br>
+        <label><input type="radio" name="q2" value="1"> var varName = value;</label><br>
+        <label><input type="radio" name="q2" value="0"> let varName value;</label><br>
+        <label><input type="radio" name="q2" value="0"> variable varName = value;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q3: What is the output of `console.log(typeof null)`?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q3" value="0"> object</label><br>
+        <label><input type="radio" name="q3" value="1"> null</label><br>
+        <label><input type="radio" name="q3" value="0"> undefined</label><br>
+        <label><input type="radio" name="q3" value="0"> number</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q4: Which of the following is a JavaScript data type?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q4" value="0"> character</label><br>
+        <label><input type="radio" name="q4" value="1"> boolean</label><br>
+        <label><input type="radio" name="q4" value="0"> string-array</label><br>
+        <label><input type="radio" name="q4" value="0"> list</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q5: What is the correct way to create a function in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q5" value="0"> function myFunction()</label><br>
+        <label><input type="radio" name="q5" value="1"> def myFunction()</label><br>
+        <label><input type="radio" name="q5" value="0"> func myFunction()</label><br>
+        <label><input type="radio" name="q5" value="0"> create myFunction()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q6: How can you add a comment in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q6" value="0"> // This is a comment</label><br>
+        <label><input type="radio" name="q6" value="1"> /* This is a comment */</label><br>
+        <label><input type="radio" name="q6" value="0"> # This is a comment</label><br>
+        <label><input type="radio" name="q6" value="0"> -- This is a comment</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q7: What does `===` signify in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q7" value="0"> Strict equality</label><br>
+        <label><input type="radio" name="q7" value="1"> Loose equality</label><br>
+        <label><input type="radio" name="q7" value="0"> Assignment</label><br>
+        <label><input type="radio" name="q7" value="0"> Comparison</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q8: Which method is used to remove the last element of an array?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q8" value="0"> pop()</label><br>
+        <label><input type="radio" name="q8" value="1"> remove()</label><br>
+        <label><input type="radio" name="q8" value="0"> delete()</label><br>
+        <label><input type="radio" name="q8" value="0"> shift()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q9: What is the default behavior of the `alert()` function?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q9" value="0"> Displays a message in a popup</label><br>
+        <label><input type="radio" name="q9" value="1"> Logs a message to the console</label><br>
+        <label><input type="radio" name="q9" value="0"> Prompts for user input</label><br>
+        <label><input type="radio" name="q9" value="0"> Reloads the page</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q10: How do you write an `if` statement in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q10" value="0"> if i = 5 then</label><br>
+        <label><input type="radio" name="q10" value="1"> if (i === 5)</label><br>
+        <label><input type="radio" name="q10" value="0"> if i == 5</label><br>
+        <label><input type="radio" name="q10" value="0"> if i === 5 then</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q11: Which keyword is used to define a constant variable?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q11" value="0"> const</label><br>
+        <label><input type="radio" name="q11" value="1"> var</label><br>
+        <label><input type="radio" name="q11" value="0"> let</label><br>
+        <label><input type="radio" name="q11" value="0"> constant</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q12: How do you create an array in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q12" value="0"> var arr = array(1, 2, 3);</label><br>
+        <label><input type="radio" name="q12" value="1"> var arr = [1, 2, 3];</label><br>
+        <label><input type="radio" name="q12" value="0"> var arr = {1, 2, 3};</label><br>
+        <label><input type="radio" name="q12" value="0"> var arr = (1, 2, 3);</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q13: What does `isNaN()` function check in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q13" value="0"> Checks if a value is not a number</label><br>
+        <label><input type="radio" name="q13" value="1"> Checks if a value is null</label><br>
+        <label><input type="radio" name="q13" value="0"> Checks if a value is undefined</label><br>
+        <label><input type="radio" name="q13" value="0"> Checks if a value is an array</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q14: How do you stop a loop in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q14" value="0"> exit;</label><br>
+        <label><input type="radio" name="q14" value="1"> break;</label><br>
+        <label><input type="radio" name="q14" value="0"> stop;</label><br>
+        <label><input type="radio" name="q14" value="0"> end;</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q15: What does the `JSON.stringify()` method do?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q15" value="0"> Converts a JavaScript object into a JSON string</label><br>
+        <label><input type="radio" name="q15" value="1"> Converts a JSON string into a JavaScript object</label><br>
+        <label><input type="radio" name="q15" value="0"> Converts a string into a number</label><br>
+        <label><input type="radio" name="q15" value="0"> Converts a number into a string</label><br>
+    </div>
+</div>
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q16: Which method is used to join two or more arrays?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q16" value="0"> concat()</label><br>
+        <label><input type="radio" name="q16" value="1"> merge()</label><br>
+        <label><input type="radio" name="q16" value="0"> join()</label><br>
+        <label><input type="radio" name="q16" value="0"> combine()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q17: What will `Boolean("false")` return?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q17" value="0"> false</label><br>
+        <label><input type="radio" name="q17" value="1"> true</label><br>
+        <label><input type="radio" name="q17" value="0"> undefined</label><br>
+        <label><input type="radio" name="q17" value="0"> null</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q18: How do you round a number to the nearest integer in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q18" value="0"> Math.round()</label><br>
+        <label><input type="radio" name="q18" value="1"> Math.ceil()</label><br>
+        <label><input type="radio" name="q18" value="0"> Math.floor()</label><br>
+        <label><input type="radio" name="q18" value="0"> Math.nearest()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q19: Which symbol is used for comments in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q19" value="0"> /* ... */</label><br>
+        <label><input type="radio" name="q19" value="1"> // ...</label><br>
+        <label><input type="radio" name="q19" value="0"> # ...</label><br>
+        <label><input type="radio" name="q19" value="0"> // ... //</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q20: What will `typeof []` return?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q20" value="0"> object</label><br>
+        <label><input type="radio" name="q20" value="1"> array</label><br>
+        <label><input type="radio" name="q20" value="0"> undefined</label><br>
+        <label><input type="radio" name="q20" value="0"> null</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q21: What does the `splice()` method do?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q21" value="0"> Adds elements to the end of an array</label><br>
+        <label><input type="radio" name="q21" value="1"> Adds/removes elements at a specific index</label><br>
+        <label><input type="radio" name="q21" value="0"> Removes elements from the beginning of an array</label><br>
+        <label><input type="radio" name="q21" value="0"> Returns a shallow copy of an array</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q22: What does the `push()` method do?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q22" value="0"> Adds elements to the end of an array</label><br>
+        <label><input type="radio" name="q22" value="1"> Removes elements from an array</label><br>
+        <label><input type="radio" name="q22" value="0"> Adds elements to the beginning of an array</label><br>
+        <label><input type="radio" name="q22" value="0"> Reverses the order of elements</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q23: Which operator is used to check equality and type in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q23" value="0"> ==</label><br>
+        <label><input type="radio" name="q23" value="1"> ===</label><br>
+        <label><input type="radio" name="q23" value="0"> =</label><br>
+        <label><input type="radio" name="q23" value="0"> !==</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q24: How do you find the length of an array in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q24" value="0"> array.length</label><br>
+        <label><input type="radio" name="q24" value="1"> array.size</label><br>
+        <label><input type="radio" name="q24" value="0"> array.count</label><br>
+        <label><input type="radio" name="q24" value="0"> array.total</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q25: What is the correct syntax to create an object in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q25" value="0"> var obj = [];</label><br>
+        <label><input type="radio" name="q25" value="1"> var obj = {};</label><br>
+        <label><input type="radio" name="q25" value="0"> var obj = ();</label><br>
+        <label><input type="radio" name="q25" value="0"> var obj = new Object[];</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q26: Which method is used to convert a string to lowercase?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q26" value="0"> toLowerCase()</label><br>
+        <label><input type="radio" name="q26" value="1"> lowerCase()</label><br>
+        <label><input type="radio" name="q26" value="0"> lower()</label><br>
+        <label><input type="radio" name="q26" value="0"> toLower()</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q27: How do you write a loop that runs while a condition is true?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q27" value="0"> for(condition)</label><br>
+        <label><input type="radio" name="q27" value="1"> while(condition)</label><br>
+        <label><input type="radio" name="q27" value="0"> loop(condition)</label><br>
+        <label><input type="radio" name="q27" value="0"> repeat(condition)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q28: How do you add an event listener in JavaScript?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q28" value="0"> element.addEventListener(event, function)</label><br>
+        <label><input type="radio" name="q28" value="1"> element.on(event, function)</label><br>
+        <label><input type="radio" name="q28" value="0"> element.listen(event, function)</label><br>
+        <label><input type="radio" name="q28" value="0"> element.event(function)</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q29: What will `console.log("5" + 2)` output?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q29" value="0"> 7</label><br>
+        <label><input type="radio" name="q29" value="1"> 52</label><br>
+        <label><input type="radio" name="q29" value="0"> 5</label><br>
+        <label><input type="radio" name="q29" value="0"> NaN</label><br>
+    </div>
+</div>
+
+<div class="question-box" data-correct-answer="1">
+    <p><strong>Q30: Which keyword is used to define a function?</strong></p>
+    <div class="radio-group">
+        <label><input type="radio" name="q30" value="0"> function</label><br>
+        <label><input type="radio" name="q30" value="1"> define</label><br>
+        <label><input type="radio" name="q30" value="0"> def</label><br>
+        <label><input type="radio" name="q30" value="0"> func</label><br>
+    </div>
+</div>
+
+                <button type="button" onclick="calculateScore('javascript-quiz', 'javascript-score')">Submit</button>
+            </form>
+            <p id="javascript-score"></p>
+        </section>
+
+    </div>
+
+    <script>
+         function showContent(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function calculateScore(formId, resultId) {
+            const form = document.getElementById(formId);
+            const selectedAnswers = form.querySelectorAll('input[type="radio"]:checked');
+            let score = 0;
+
+            const questions = form.querySelectorAll('.question-box');
+            questions.forEach((questionBox) => {
+                const correctAnswer = questionBox.getAttribute('data-correct-answer');
+                const selectedAnswer = questionBox.querySelector('input[type="radio"]:checked');
+
+                // Reset the styles for each question
+                questionBox.classList.remove('correct', 'incorrect');
+
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswer) {
+                        questionBox.classList.add('correct');
+                        score += 1;
+                    } else {
+                        questionBox.classList.add('incorrect');
+                        // Show the correct answer for the incorrect question
+                        const correctRadio = questionBox.querySelector(`input[value="${correctAnswer}"]`);
+                        correctRadio.parentElement.style.color = 'green';  // Highlight correct answer in green
+                    }
+                } else {
+                    // If no answer selected, mark it as incorrect
+                    questionBox.classList.add('incorrect');
+                }
+            });
+
+            document.getElementById(resultId).textContent = `Your score is: ${score}`;
+        }
+    </script>
+</body>
+</html>
